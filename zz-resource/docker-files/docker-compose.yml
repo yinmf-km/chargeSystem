@@ -1,0 +1,54 @@
+version: '3.2'
+
+services:
+
+  xxljob:
+    image: docker.io/xuxueli/xxl-job-admin:2.2.0
+    container_name: xxljob
+    volumes:
+      - ./logs/xxljob:/data/applogs
+    ports:
+      - "8081:8080"
+    environment:
+      TZ: Asia/Shanghai
+      # 注意: spring.datasource.password需要修改成正确的root密码
+      PARAMS: '--spring.datasource.url=jdbc:mysql://host.docker.internal:3306/xxl_job?Unicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+               --spring.datasource.username=root
+               --spring.datasource.password=123456
+               --xxl.job.login.username=admin
+               --xxl.job.login.password=123456'
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+
+  redis:
+    container_name: redis
+    build:
+      context: services/redis/
+      args:
+        - REDIS_VER=4
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./services/redis/redis.conf:/usr/local/etc/redis/redis.conf:rw
+      - ./data/redis:/data:rw
+      - ./logs/redis:/var/log/:rw
+
+  minio1:
+    image: minio/minio:latest
+    environment:
+      # spring boot服务中的配置项需要与该值相同。
+      # nginx访问页面的登录名和密码。密码不能少于8个字符。
+      - MINIO_ACCESS_KEY=admin
+      - MINIO_SECRET_KEY=admin123456
+    volumes:
+      - ./data/minio:/data
+      - ./services/minio/config:/root/.minio
+    ports:
+      # 这个是给Java的minio客户端使用的端口。
+      - "19000:9000"
+      # 对主机控制台暴露19001接口，nginx需要将请求导入该端口号。
+      - "19001:9001"
+    command: server /data --console-address ":9001"
