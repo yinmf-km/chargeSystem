@@ -67,8 +67,8 @@ swagger:
   basePackage: com.course.app
   # 工程服务的基础包名。
   serviceBasePackage: com.course.app.webadmin
-  title: 橙单单体服务工程
-  description: 橙单单体服务工程详情
+  title: 曲靖清源学校缴费工程
+  description: 曲靖清源学校缴费工程详情
   version: 1.0
 datafilter:
   tenant:

@@ -1,0 +1,514 @@
+[INFO ] [2023-05-05 22:47:02] T:[] S:[] U:[] [background-preinit] ==> HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] [2023-05-05 22:47:02] T:[] S:[] U:[] [main] ==> Starting WebAdminApplication using Java 1.8.0_241 on LAPTOP-EP7QEOQR with PID 25296 (D:\work\other\chargeSystem\application-webadmin\target\classes started by yinmf in D:\work\other\chargeSystem\application-webadmin)
+[INFO ] [2023-05-05 22:47:02] T:[] S:[] U:[] [main] ==> The following 1 profile is active: "dev"
+[INFO ] [2023-05-05 22:47:07] T:[] S:[] U:[] [main] ==> Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] [2023-05-05 22:47:07] T:[] S:[] U:[] [main] ==> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] [2023-05-05 22:47:07] T:[] S:[] U:[] [main] ==> Finished Spring Data repository scanning in 56 ms. Found 0 Redis repository interfaces.
+[INFO ] [2023-05-05 22:47:08] T:[] S:[] U:[] [main] ==> Bean 'commonWebMvcConfig' of type [com.course.app.common.core.config.CommonWebMvcConfig$$EnhancerBySpringCGLIB$$acf324f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [2023-05-05 22:47:13] T:[] S:[] U:[] [main] ==> Tomcat initialized with port(s): 8082 (http)
+[INFO ] [2023-05-05 22:47:13] T:[] S:[] U:[] [main] ==> Initializing ProtocolHandler ["http-nio-8082"]
+[INFO ] [2023-05-05 22:47:13] T:[] S:[] U:[] [main] ==> Starting service [Tomcat]
+[INFO ] [2023-05-05 22:47:13] T:[] S:[] U:[] [main] ==> Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] [2023-05-05 22:47:13] T:[] S:[] U:[] [main] ==> Initializing Spring embedded WebApplicationContext
+[INFO ] [2023-05-05 22:47:13] T:[] S:[] U:[] [main] ==> Root WebApplicationContext: initialization completed in 10823 ms
+[INFO ] [2023-05-05 22:47:14] T:[] S:[] U:[] [main] ==> Filter characterEncodingFilter was not registered (possibly already registered?)
+[ERROR] [2023-05-05 22:47:14] T:[] S:[] U:[] [main] ==> For security constraints with URL pattern [/*] only the HTTP methods [TRACE HEAD DELETE SEARCH PROPFIND COPY PUT PATCH] are covered. All other methods are uncovered.
+[INFO ] [2023-05-05 22:47:15] T:[] S:[] U:[] [main] ==> Redisson 3.15.4
+[INFO ] [2023-05-05 22:47:21] T:[] S:[] U:[] [redisson-netty-2-10] ==> 1 connections initialized for /192.168.23.132:6379
+[INFO ] [2023-05-05 22:47:21] T:[] S:[] U:[] [redisson-netty-2-11] ==> 5 connections initialized for /192.168.23.132:6379
+[INFO ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> {dataSource-1} inited
+[INFO ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> {dataSource-2} inited
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\DormFee.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysDataPerm.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysDept.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysMenu.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysPermCode.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysRole.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysUser.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowCategory.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowEntry.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowEntryVariable.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowMessage.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowTaskComment.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:22] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowWorkOrder.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:47:23] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermDept".
+[WARN ] [2023-05-05 22:47:23] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:47:23] T:[] S:[] U:[] [main] ==> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowIdentityExtHelper': Unsatisfied dependency expressed through field 'sysUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserService': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserMapper' defined in file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\dao\SysUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+[INFO ] [2023-05-05 22:47:23] T:[] S:[] U:[] [main] ==> {dataSource-2} closing ...
+[INFO ] [2023-05-05 22:47:23] T:[] S:[] U:[] [main] ==> {dataSource-2} closed
+[INFO ] [2023-05-05 22:47:23] T:[] S:[] U:[] [main] ==> {dataSource-1} closing ...
+[INFO ] [2023-05-05 22:47:23] T:[] S:[] U:[] [main] ==> {dataSource-1} closed
+[INFO ] [2023-05-05 22:47:23] T:[] S:[] U:[] [main] ==> Stopping service [Tomcat]
+[INFO ] [2023-05-05 22:47:23] T:[] S:[] U:[] [main] ==> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] [2023-05-05 22:47:23] T:[] S:[] U:[] [main] ==> Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowIdentityExtHelper': Unsatisfied dependency expressed through field 'sysUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserService': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserMapper' defined in file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\dao\SysUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:448)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.course.app.webadmin.WebAdminApplication.main(WebAdminApplication.java:20)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserService': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserMapper' defined in file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\dao\SysUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserMapper' defined in file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\dao\SysUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 58 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:574)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:445)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:609)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 59 common frames omitted
+[INFO ] [2023-05-05 22:48:42] T:[] S:[] U:[] [background-preinit] ==> HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] [2023-05-05 22:48:42] T:[] S:[] U:[] [main] ==> Starting WebAdminApplication using Java 1.8.0_241 on LAPTOP-EP7QEOQR with PID 5376 (D:\work\other\chargeSystem\application-webadmin\target\classes started by yinmf in D:\work\other\chargeSystem\application-webadmin)
+[INFO ] [2023-05-05 22:48:42] T:[] S:[] U:[] [main] ==> The following 1 profile is active: "dev"
+[INFO ] [2023-05-05 22:48:45] T:[] S:[] U:[] [main] ==> Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] [2023-05-05 22:48:45] T:[] S:[] U:[] [main] ==> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] [2023-05-05 22:48:45] T:[] S:[] U:[] [main] ==> Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+[INFO ] [2023-05-05 22:48:45] T:[] S:[] U:[] [main] ==> Bean 'commonWebMvcConfig' of type [com.course.app.common.core.config.CommonWebMvcConfig$$EnhancerBySpringCGLIB$$1711bf23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [2023-05-05 22:48:49] T:[] S:[] U:[] [main] ==> Tomcat initialized with port(s): 8082 (http)
+[INFO ] [2023-05-05 22:48:49] T:[] S:[] U:[] [main] ==> Initializing ProtocolHandler ["http-nio-8082"]
+[INFO ] [2023-05-05 22:48:49] T:[] S:[] U:[] [main] ==> Starting service [Tomcat]
+[INFO ] [2023-05-05 22:48:49] T:[] S:[] U:[] [main] ==> Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] [2023-05-05 22:48:49] T:[] S:[] U:[] [main] ==> Initializing Spring embedded WebApplicationContext
+[INFO ] [2023-05-05 22:48:49] T:[] S:[] U:[] [main] ==> Root WebApplicationContext: initialization completed in 6900 ms
+[INFO ] [2023-05-05 22:48:49] T:[] S:[] U:[] [main] ==> Filter characterEncodingFilter was not registered (possibly already registered?)
+[ERROR] [2023-05-05 22:48:49] T:[] S:[] U:[] [main] ==> For security constraints with URL pattern [/*] only the HTTP methods [TRACE HEAD DELETE SEARCH PROPFIND COPY PUT PATCH] are covered. All other methods are uncovered.
+[INFO ] [2023-05-05 22:48:50] T:[] S:[] U:[] [main] ==> Redisson 3.15.4
+[INFO ] [2023-05-05 22:48:55] T:[] S:[] U:[] [redisson-netty-2-10] ==> 5 connections initialized for /192.168.23.132:6379
+[INFO ] [2023-05-05 22:48:55] T:[] S:[] U:[] [redisson-netty-2-8] ==> 1 connections initialized for /192.168.23.132:6379
+[INFO ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> {dataSource-1} inited
+[INFO ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> {dataSource-2} inited
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\DormFee.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysDataPerm.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysDept.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysMenu.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysPermCode.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysRole.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\model\SysUser.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowCategory.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowEntry.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowEntryVariable.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowMessage.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowTaskComment.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:55] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowWorkOrder.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-05 22:48:56] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermDept".
+[WARN ] [2023-05-05 22:48:56] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:48:56] T:[] S:[] U:[] [main] ==> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowIdentityExtHelper': Unsatisfied dependency expressed through field 'sysUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserService': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserMapper' defined in file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\dao\SysUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+[INFO ] [2023-05-05 22:48:56] T:[] S:[] U:[] [main] ==> {dataSource-2} closing ...
+[INFO ] [2023-05-05 22:48:56] T:[] S:[] U:[] [main] ==> {dataSource-2} closed
+[INFO ] [2023-05-05 22:48:56] T:[] S:[] U:[] [main] ==> {dataSource-1} closing ...
+[INFO ] [2023-05-05 22:48:56] T:[] S:[] U:[] [main] ==> {dataSource-1} closed
+[INFO ] [2023-05-05 22:48:56] T:[] S:[] U:[] [main] ==> Stopping service [Tomcat]
+[INFO ] [2023-05-05 22:48:56] T:[] S:[] U:[] [main] ==> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] [2023-05-05 22:48:56] T:[] S:[] U:[] [main] ==> Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowIdentityExtHelper': Unsatisfied dependency expressed through field 'sysUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserService': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserMapper' defined in file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\dao\SysUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:448)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.course.app.webadmin.WebAdminApplication.main(WebAdminApplication.java:20)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserService': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserMapper' defined in file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\dao\SysUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserMapper' defined in file [D:\work\other\chargeSystem\application-webadmin\target\classes\com\course\app\webadmin\upms\dao\SysUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 58 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.SysDataPerm
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:574)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:445)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:609)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 59 common frames omitted
+[INFO ] [2023-05-05 22:50:13] T:[] S:[] U:[] [main] ==> Starting WebAdminApplication using Java 1.8.0_241 on LAPTOP-EP7QEOQR with PID 14436 (D:\work\other\chargeSystem\application-webadmin\target\classes started by yinmf in D:\work\other\chargeSystem\application-webadmin)
+[INFO ] [2023-05-05 22:50:13] T:[] S:[] U:[] [main] ==> The following 1 profile is active: "dev"
+[INFO ] [2023-05-05 22:50:13] T:[] S:[] U:[] [background-preinit] ==> HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] [2023-05-05 22:50:17] T:[] S:[] U:[] [main] ==> Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] [2023-05-05 22:50:17] T:[] S:[] U:[] [main] ==> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] [2023-05-05 22:50:17] T:[] S:[] U:[] [main] ==> Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+[INFO ] [2023-05-05 22:50:17] T:[] S:[] U:[] [main] ==> Bean 'commonWebMvcConfig' of type [com.course.app.common.core.config.CommonWebMvcConfig$$EnhancerBySpringCGLIB$$54dd29cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [2023-05-05 22:50:21] T:[] S:[] U:[] [main] ==> Tomcat initialized with port(s): 8082 (http)
+[INFO ] [2023-05-05 22:50:21] T:[] S:[] U:[] [main] ==> Initializing ProtocolHandler ["http-nio-8082"]
+[INFO ] [2023-05-05 22:50:21] T:[] S:[] U:[] [main] ==> Starting service [Tomcat]
+[INFO ] [2023-05-05 22:50:21] T:[] S:[] U:[] [main] ==> Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] [2023-05-05 22:50:21] T:[] S:[] U:[] [main] ==> Initializing Spring embedded WebApplicationContext
+[INFO ] [2023-05-05 22:50:21] T:[] S:[] U:[] [main] ==> Root WebApplicationContext: initialization completed in 7820 ms
+[INFO ] [2023-05-05 22:50:22] T:[] S:[] U:[] [main] ==> Filter characterEncodingFilter was not registered (possibly already registered?)
+[ERROR] [2023-05-05 22:50:22] T:[] S:[] U:[] [main] ==> For security constraints with URL pattern [/*] only the HTTP methods [TRACE HEAD DELETE SEARCH PROPFIND COPY PUT PATCH] are covered. All other methods are uncovered.
+[INFO ] [2023-05-05 22:50:23] T:[] S:[] U:[] [main] ==> Redisson 3.15.4
+[INFO ] [2023-05-05 22:50:27] T:[] S:[] U:[] [redisson-netty-2-9] ==> 5 connections initialized for /192.168.23.132:6379
+[INFO ] [2023-05-05 22:50:27] T:[] S:[] U:[] [redisson-netty-2-8] ==> 1 connections initialized for /192.168.23.132:6379
+[INFO ] [2023-05-05 22:50:28] T:[] S:[] U:[] [main] ==> {dataSource-1} inited
+[INFO ] [2023-05-05 22:50:28] T:[] S:[] U:[] [main] ==> {dataSource-2} inited
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermDept".
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermMenu".
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermUser".
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermUser ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDeptRelation".
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDeptRelation ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysMenuPermCode".
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysMenuPermCode ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysPermCodePerm".
+[WARN ] [2023-05-05 22:50:29] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysPermCodePerm ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:50:30] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysRoleMenu".
+[WARN ] [2023-05-05 22:50:30] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysRoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:50:30] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysUserRole".
+[WARN ] [2023-05-05 22:50:30] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysUserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:50:31] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.common.flow.model.FlowTaskExt".
+[WARN ] [2023-05-05 22:50:31] T:[] S:[] U:[] [main] ==> class com.course.app.common.flow.model.FlowTaskExt ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:50:36] T:[] S:[] U:[] [main] ==> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dormFeeController': Unsatisfied dependency expressed through field 'dormFeeService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.course.app.webadmin.upms.service.DormFeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO ] [2023-05-05 22:50:36] T:[] S:[] U:[] [main] ==> {dataSource-2} closing ...
+[INFO ] [2023-05-05 22:50:36] T:[] S:[] U:[] [main] ==> {dataSource-2} closed
+[INFO ] [2023-05-05 22:50:36] T:[] S:[] U:[] [main] ==> {dataSource-1} closing ...
+[INFO ] [2023-05-05 22:50:36] T:[] S:[] U:[] [main] ==> {dataSource-1} closed
+[INFO ] [2023-05-05 22:50:36] T:[] S:[] U:[] [main] ==> Stopping service [Tomcat]
+[INFO ] [2023-05-05 22:50:36] T:[] S:[] U:[] [main] ==> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] [2023-05-05 22:50:36] T:[] S:[] U:[] [main] ==> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dormFeeService in com.course.app.webadmin.upms.controller.DormFeeController required a bean of type 'com.course.app.webadmin.upms.service.DormFeeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.course.app.webadmin.upms.service.DormFeeService' in your configuration.
+
+[INFO ] [2023-05-05 22:52:29] T:[] S:[] U:[] [main] ==> Starting WebAdminApplication using Java 1.8.0_241 on LAPTOP-EP7QEOQR with PID 21884 (D:\work\other\chargeSystem\application-webadmin\target\classes started by yinmf in D:\work\other\chargeSystem\application-webadmin)
+[INFO ] [2023-05-05 22:52:29] T:[] S:[] U:[] [background-preinit] ==> HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] [2023-05-05 22:52:29] T:[] S:[] U:[] [main] ==> The following 1 profile is active: "dev"
+[INFO ] [2023-05-05 22:52:38] T:[] S:[] U:[] [background-preinit] ==> HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] [2023-05-05 22:52:38] T:[] S:[] U:[] [main] ==> Starting WebAdminApplication using Java 1.8.0_241 on LAPTOP-EP7QEOQR with PID 29968 (D:\work\other\chargeSystem\application-webadmin\target\classes started by yinmf in D:\work\other\chargeSystem\application-webadmin)
+[INFO ] [2023-05-05 22:52:38] T:[] S:[] U:[] [main] ==> The following 1 profile is active: "dev"
+[INFO ] [2023-05-05 22:52:41] T:[] S:[] U:[] [main] ==> Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] [2023-05-05 22:52:41] T:[] S:[] U:[] [main] ==> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] [2023-05-05 22:52:41] T:[] S:[] U:[] [main] ==> Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+[INFO ] [2023-05-05 22:52:42] T:[] S:[] U:[] [main] ==> Bean 'commonWebMvcConfig' of type [com.course.app.common.core.config.CommonWebMvcConfig$$EnhancerBySpringCGLIB$$a1830435] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [2023-05-05 22:52:46] T:[] S:[] U:[] [main] ==> Tomcat initialized with port(s): 8082 (http)
+[INFO ] [2023-05-05 22:52:46] T:[] S:[] U:[] [main] ==> Initializing ProtocolHandler ["http-nio-8082"]
+[INFO ] [2023-05-05 22:52:46] T:[] S:[] U:[] [main] ==> Starting service [Tomcat]
+[INFO ] [2023-05-05 22:52:46] T:[] S:[] U:[] [main] ==> Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] [2023-05-05 22:52:46] T:[] S:[] U:[] [main] ==> Initializing Spring embedded WebApplicationContext
+[INFO ] [2023-05-05 22:52:46] T:[] S:[] U:[] [main] ==> Root WebApplicationContext: initialization completed in 8539 ms
+[INFO ] [2023-05-05 22:52:47] T:[] S:[] U:[] [main] ==> Filter characterEncodingFilter was not registered (possibly already registered?)
+[ERROR] [2023-05-05 22:52:47] T:[] S:[] U:[] [main] ==> For security constraints with URL pattern [/*] only the HTTP methods [TRACE HEAD DELETE SEARCH PROPFIND COPY PUT PATCH] are covered. All other methods are uncovered.
+[INFO ] [2023-05-05 22:52:48] T:[] S:[] U:[] [main] ==> Redisson 3.15.4
+[INFO ] [2023-05-05 22:52:52] T:[] S:[] U:[] [redisson-netty-2-8] ==> 5 connections initialized for /192.168.23.132:6379
+[INFO ] [2023-05-05 22:52:52] T:[] S:[] U:[] [redisson-netty-2-11] ==> 1 connections initialized for /192.168.23.132:6379
+[INFO ] [2023-05-05 22:52:53] T:[] S:[] U:[] [main] ==> {dataSource-1} inited
+[INFO ] [2023-05-05 22:52:53] T:[] S:[] U:[] [main] ==> {dataSource-2} inited
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermDept".
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermMenu".
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermUser".
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermUser ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDeptRelation".
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDeptRelation ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysMenuPermCode".
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysMenuPermCode ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysPermCodePerm".
+[WARN ] [2023-05-05 22:52:54] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysPermCodePerm ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:52:55] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysRoleMenu".
+[WARN ] [2023-05-05 22:52:55] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysRoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:52:55] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysUserRole".
+[WARN ] [2023-05-05 22:52:55] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysUserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-05 22:52:56] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.common.flow.model.FlowTaskExt".
+[WARN ] [2023-05-05 22:52:56] T:[] S:[] U:[] [main] ==> class com.course.app.common.flow.model.FlowTaskExt ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[INFO ] [2023-05-05 22:53:02] T:[] S:[] U:[] [main] ==> 自定义配置项：
+AjCaptchaProperties{type=DEFAULT, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='我的水印', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='2', cacheNumber='1000', timingClear='180', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=360, reqGetMinuteLimit=30, reqCheckMinuteLimit=30, reqVerifyMinuteLimit=60}
+[INFO ] [2023-05-05 22:53:02] T:[] S:[] U:[] [main] ==> 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@34538ffe, ORIGINAL=[Ljava.lang.String;@7ae75ba6, PIC_CLICK=[Ljava.lang.String;@2bab1821]
+[INFO ] [2023-05-05 22:53:02] T:[] S:[] U:[] [main] ==> supported-captchaCache-service:[redis, local]
+[INFO ] [2023-05-05 22:53:02] T:[] S:[] U:[] [main] ==> supported-captchaTypes-service:[clickWord, default, blockPuzzle]
+[INFO ] [2023-05-05 22:53:02] T:[] S:[] U:[] [main] ==> --->>>初始化验证码底图<<<---clickWord
+[INFO ] [2023-05-05 22:53:03] T:[] S:[] U:[] [main] ==> --->>>初始化验证码底图<<<---blockPuzzle
+[INFO ] [2023-05-05 22:53:04] T:[] S:[] U:[] [main] ==> No deployment resources were found for autodeployment
+[INFO ] [2023-05-05 22:53:04] T:[] S:[] U:[] [main] ==> No deployment resources were found for autodeployment
+[INFO ] [2023-05-05 22:53:06] T:[] S:[] U:[] [main] ==> Found 2 Engine Configurators in total:
+[INFO ] [2023-05-05 22:53:06] T:[] S:[] U:[] [main] ==> class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+[INFO ] [2023-05-05 22:53:06] T:[] S:[] U:[] [main] ==> class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+[INFO ] [2023-05-05 22:53:06] T:[] S:[] U:[] [main] ==> Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+[INFO ] [2023-05-05 22:53:06] T:[] S:[] U:[] [main] ==> Executing beforeInit() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+[INFO ] [2023-05-05 22:53:08] T:[] S:[] U:[] [main] ==> Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+[INFO ] [2023-05-05 22:53:11] T:[] S:[] U:[] [main] ==> Reading from charge_system.FLW_EV_DATABASECHANGELOG
+[INFO ] [2023-05-05 22:53:11] T:[] S:[] U:[] [main] ==> EventRegistryEngine default created
+[INFO ] [2023-05-05 22:53:11] T:[] S:[] U:[] [main] ==> Executing configure() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+[INFO ] [2023-05-05 22:53:11] T:[] S:[] U:[] [main] ==> IdmEngine default created
+[INFO ] [2023-05-05 22:53:11] T:[] S:[] U:[] [main] ==> ProcessEngine default created
+[INFO ] [2023-05-05 22:53:11] T:[] S:[] U:[] [main] ==> Total of v5 deployments found: 0
+[INFO ] [2023-05-05 22:53:15] T:[] S:[] U:[] [main] ==> Exposing 14 endpoint(s) beneath base path '/actuator'
+[WARN ] [2023-05-05 22:53:18] T:[] S:[] U:[] [main] ==> Cannot find template location(s): [classpath:/template/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[INFO ] [2023-05-05 22:53:19] T:[] S:[] U:[] [main] ==> Starting ProtocolHandler ["http-nio-8082"]
+[INFO ] [2023-05-05 22:53:19] T:[] S:[] U:[] [main] ==> Tomcat started on port(s): 8082 (http) with context path ''
+[INFO ] [2023-05-05 22:53:21] T:[] S:[] U:[] [main] ==> Started WebAdminApplication in 44.279 seconds (JVM running for 45.615)
+[INFO ] [2023-05-05 22:53:30] T:[] S:[] U:[] [http-nio-8082-exec-3] ==> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [2023-05-05 22:53:30] T:[] S:[] U:[] [http-nio-8082-exec-3] ==> Initializing Servlet 'dispatcherServlet'
+[INFO ] [2023-05-05 22:53:30] T:[] S:[] U:[] [http-nio-8082-exec-3] ==> Completed initialization in 2 ms
+[INFO ] [2023-05-05 22:53:41] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> 开始请求，url=/admin/upms/login/doLogin, reqData={"password":"BNowY0MlJl%2BqUZ2sXZ8%2BmeEGOpwgjOzoeFhA%2B1%2FVlRJ4fe8oHiPCFlKhK3uKGjGPxknIW7wzbgCw%2FrkfK5Pfs%2BZpWT4GMHhNrXWGgBnnHomNtLJDedNXWWwxIZYx9gMXN8tfrye9eVXhJpATznJNVSads7Ki%2BCZm35RO%2F63eZBc%3D","loginName":"admin","captchaVerification":"YuMV2tdMob8c1sECLfP8crp3HXm9jFRBwfIQY47rg2SGqDfiXjFg1e/i5mYhtJg/UK25odZHYnhw5wOttWibAWiSbH/58MfVovD/003/DQE="}
+[DEBUG] [2023-05-05 22:53:41] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> ==>  Preparing: SELECT user_id,login_name,password,dept_id,show_name,user_type,head_image_url,user_status,email,mobile,deleted_flag,create_user_id,create_time,update_user_id,update_time FROM sys_user WHERE login_name=? AND deleted_flag=1
+[DEBUG] [2023-05-05 22:53:41] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> ==> Parameters: admin(String)
+[DEBUG] [2023-05-05 22:53:41] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> ==>  Preparing: SELECT dept_id,dept_name,show_order,parent_id,deleted_flag,province_id,province_name,city_id,city_name,create_user_id,create_time,update_user_id,update_time FROM sys_dept WHERE dept_id=? AND deleted_flag=1
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> ==> Parameters: 1627840812937121794(Long)
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> ==>  Preparing: SELECT user_id,role_id FROM sys_user_role WHERE user_id=?
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> ==> Parameters: 1627840812899373056(Long)
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> <==      Total: 0
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> ==>  Preparing: SELECT menu_id,parent_id,menu_name,menu_type,form_router_name,online_form_id,online_menu_perm_type,report_page_id,online_flow_entry_id,show_order,icon,deleted_flag,create_user_id,create_time,update_user_id,update_time FROM sys_menu WHERE deleted_flag=1 ORDER BY show_order ASC
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> ==> Parameters: 
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> <==      Total: 81
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> ==>  Preparing: SELECT perm_code_id,parent_id,perm_code,perm_code_type,show_name,show_order,deleted_flag,create_user_id,create_time,update_user_id,update_time FROM sys_perm_code WHERE deleted_flag=1
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> ==> Parameters: 
+[DEBUG] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> <==      Total: 80
+[INFO ] [2023-05-05 22:53:43] T:[2f97171914b94f8eaf889f07c07fc4b6] S:[] U:[] [http-nio-8082-exec-3] ==> 请求完成, url=/admin/upms/login/doLogin，elapse=1520ms, respData={"data":{"deptName":"公司总部","menuList":[{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formFlowCategory","menuId":1418057835631087616,"menuName":"流程分类","menuType":1,"parentId":1418057714138877952,"showOrder":1,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formMyTask","menuId":1418059167532322816,"menuName":"待办任务","menuType":1,"parentId":1418059005175009280,"showOrder":1,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"menuId":1627840812974870529,"menuName":"系统管理","menuType":0,"showOrder":1,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formFlowEntry","menuId":1418058289182150656,"menuName":"流程设计","menuType":1,"parentId":1418057714138877952,"showOrder":2,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formMyApprovedTask","menuId":1423161217970606080,"menuName":"已办任务","menuType":1,"parentId":1418059005175009280,"showOrder":2,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"menuId":1418057714138877952,"menuName":"流程管理","menuType":0,"showOrder":3,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formAllInstance","menuId":1418058744037642240,"menuName":"流程实例","menuType":1,"parentId":1418057714138877952,"showOrder":3,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formMyHistoryTask","menuId":1418059283920064512,"menuName":"历史任务","menuType":1,"parentId":1418059005175009280,"showOrder":3,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"menuId":1418059005175009280,"menuName":"任务管理","menuType":0,"showOrder":4,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formSysUser","menuId":1627840812991647744,"menuName":"用户管理","menuType":1,"parentId":1627840812974870529,"showOrder":100,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formSysDept","menuId":1627840812991647745,"menuName":"部门管理","menuType":1,"parentId":1627840812974870529,"showOrder":105,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formSysRole","menuId":1627840812991647746,"menuName":"角色管理","menuType":1,"parentId":1627840812974870529,"showOrder":110,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formSysDataPerm","menuId":1627840812991647747,"menuName":"数据权限管理","menuType":1,"parentId":1627840812974870529,"showOrder":115,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formSysMenu","menuId":1627840812991647748,"menuName":"菜单管理","menuType":1,"parentId":1627840812974870529,"showOrder":120,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formSysPermCode","menuId":1627840812991647749,"menuName":"权限字管理","menuType":1,"parentId":1627840812974870529,"showOrder":125,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formSysPerm","menuId":1627840812991647750,"menuName":"权限管理","menuType":1,"parentId":1627840812974870529,"showOrder":130,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formSysDict","menuId":1627840812991647751,"menuName":"字典管理","menuType":1,"parentId":1627840812974870529,"showOrder":135,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formSysOperationLog","menuId":1627840812991647752,"menuName":"操作日志","menuType":1,"parentId":1627840812974870529,"showOrder":140,"updateTime":1682179200000,"updateUserId":1627840812899373056},{"createTime":1682179200000,"createUserId":1627840812899373056,"deletedFlag":1,"formRouterName":"formSysLoginUser","menuId":1627840812991647753,"menuName":"在线用户","menuType":1,"parentId":1627840812974870529,"showOrder":145,"updateTime":1682179200000,"updateUserId":1627840812899373056}],"showName":"管理员","tokenData":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2ODMzNzA0MjMsInNlc3Npb25JZCI6ImFkbWluXzRfYzFmZTE1MWFiOWRhNGFiYjkwYmY1NDgxOTU3ODQ3MmEiLCJDcmVhdGVkVGltZSI6MTY4MzI5ODQyMzA0MH0.rdoJTe30YT6ogmsRgzsmf0HN51heKeMRUbH3GX5yE5yaVLteMEiX6yXTNadeJBdiq0juyff3fJB4cR6jEsHhtg","isAdmin":true,"permCodeList":["formSysMenu","formSysMenu:fragmentSysMenu:listSysMenuPermDetail","formAllInstance:formAllInstance","formSysDataPerm:fragmentSysDataPermUser","formSysUser:fragmentSysUser:listSysUserPermDetail","formSysRole:fragmentSysRole:delete","formSysPermCode","formMyTask:formMyTask","formSysRole:fragmentSysRoleUser:addUserRole","formFlowEntry:formFlowEntry:update","formSysPerm","formSysPerm:fragmentSysPerm:updatePermModule","formSysRole","formAllInstance:formAllInstance:stop","formSysDataPerm:fragmentSysDataPermUser:deleteDataPermUser","formFlowCategory:formFlowCategory","formSysPermCode:fragmentSysPermCode","formAllInstance","formSysLoginUser","formSysDict:fragmentSysDict:add","formFlowCategory:formFlowCategory:delete","formSysDict:fragmentSysDict:delete","formAllInstance:formAllInstance:delete","formSysUser:fragmentSysUser:add","formSysDept","formFlowEntry:formFlowEntry","formSysDict:fragmentSysDict:reloadCache","formSysPermCode:fragmentSysPermCode:add","formFlowCategory:formFlowCategory:add","formSysUser","formSysDataPerm:fragmentSysDataPerm:update","formSysPerm:fragmentSysPerm:deletePerm","formSysPermCode:fragmentSysPermCode:update","formSysDept:fragmentSysDept:delete","formSysRole:fragmentSysRole","formSysDataPerm:fragmentSysDataPerm:delete","formSysPerm:fragmentSysPerm:updatePerm","formSysDataPerm:fragmentSysDataPerm:add","formSysPerm:fragmentSysPerm:addPermModule","formMyTask","formSysLoginUser:fragmentLoginUser:delete","formSysOperationLog","formSysUser:fragmentSysUser","formSysPermCode:fragmentSysPermCode:listSysPermCodePermDetail","formFlowCategory","formSysMenu:fragmentSysMenu:delete","formMyApprovedTask:formMyApprovedTask","formSysRole:fragmentSysRoleUser:deleteUserRole","formSysDict:fragmentSysDict","formMyApprovedTask","formSysUser:fragmentSysUser:update","formSysDataPerm:fragmentSysDataPerm","formSysUser:fragmentSysUser:resetPassword","formSysDict","formSysMenu:fragmentSysMenu:update","formMyHistoryTask","formSysPerm:fragmentSysPerm:addPerm","formSysUser:fragmentSysUser:delete","formSysMenu:fragmentSysMenu","formSysDict:fragmentSysDict:update","formSysDept:fragmentSysDept:add","formSysPerm:fragmentSysPerm","formSysRole:fragmentSysRoleUser","formSysRole:fragmentSysRole:add","formSysDept:fragmentSysDept:update","formSysPerm:fragmentSysPerm:deletePermModule","formSysPerm:fragmentSysPerm:listSysPermPermDetail","formMyHistoryTask:formMyHistoryTask","formFlowCategory:formFlowCategory:update","formSysDataPerm","formSysRole:fragmentSysRole:update","formFlowEntry","formSysDataPerm:fragmentSysDataPermUser:addDataPermUser","formSysRole:fragmentSysRole:listSysRolePermDetail","formSysMenu:fragmentSysMenu:add","formSysPermCode:fragmentSysPermCode:delete","formFlowEntry:formFlowEntry:start","formSysOperationLog:fragmentSysOperationLog","formSysDept:fragmentSysDept","formSysLoginUser:fragmentLoginUser"]},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[DEBUG] [2023-05-05 22:53:43] T:[] S:[] U:[] [task-1] ==> ==>  Preparing: INSERT INTO zz_sys_operation_log ( log_id, description, operation_type, service_name, api_class, api_method, session_id, trace_id, elapse, request_method, request_url, request_arguments, request_ip, success, operator_id, operator_name, operation_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+[DEBUG] [2023-05-05 22:53:43] T:[] S:[] U:[] [task-1] ==> ==> Parameters: 1654499614146957312(Long), (String), 0(Integer), application-webadmin(String), com.course.app.webadmin.upms.controller.LoginController(String), com.course.app.webadmin.upms.controller.LoginController.doLogin(String), admin_4_c1fe151ab9da4abb90bf54819578472a(String), 2f97171914b94f8eaf889f07c07fc4b6(String), 1521(Long), POST(String), /admin/upms/login/doLogin(String), {"password":"BNowY0MlJl%2BqUZ2sXZ8%2BmeEGOpwgjOzoeFhA%2B1%2FVlRJ4fe8oHiPCFlKhK3uKGjGPxknIW7wzbgCw%2FrkfK5Pfs%2BZpWT4GMHhNrXWGgBnnHomNtLJDedNXWWwxIZYx9gMXN8tfrye9eVXhJpATznJNVSads7Ki%2BCZm35RO%2F63eZBc%3D","loginName":"admin","captchaVerification":"YuMV2tdMob8c1sECLfP8crp3HXm9jFRBwfIQY47rg2SGqDfiXjFg1e/i5mYhtJg/UK25odZHYnhw5wOttWibAWiSbH/58MfVovD/003/DQE="}(String), 0:0:0:0:0:0:0:1(String), true(Boolean), 1627840812899373056(Long), admin(String), 2023-05-05 22:53:41.787(Timestamp)
+[DEBUG] [2023-05-05 22:53:43] T:[] S:[] U:[] [task-1] ==> <==    Updates: 1
+[INFO ] [2023-05-05 22:53:43] T:[187f919b99b041b3b9cb61a3d539484c] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-8] ==> 开始请求，url=/admin/flow/flowMessage/getMessageCount, reqData={}
+[DEBUG] [2023-05-05 22:53:43] T:[187f919b99b041b3b9cb61a3d539484c] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-8] ==> ==>  Preparing: SELECT COUNT(1) FROM zz_flow_message a WHERE a.task_finished = false AND a.message_type = 0 AND (a.task_assignee = ? OR EXISTS (SELECT * FROM zz_flow_msg_candidate_identity b WHERE a.message_id = b.message_id AND b.candidate_id IN ( ? , ? )))
+[DEBUG] [2023-05-05 22:53:43] T:[187f919b99b041b3b9cb61a3d539484c] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-8] ==> ==> Parameters: admin(String), admin(String), 1627840812937121794(String)
+[DEBUG] [2023-05-05 22:53:43] T:[187f919b99b041b3b9cb61a3d539484c] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-8] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:53:43] T:[187f919b99b041b3b9cb61a3d539484c] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-8] ==> ==>  Preparing: SELECT COUNT(1) FROM zz_flow_message a WHERE a.message_type = 1 AND EXISTS (SELECT * FROM zz_flow_msg_candidate_identity b WHERE a.message_id = b.message_id AND b.candidate_id IN ( ? , ? )) AND NOT EXISTS (SELECT * FROM zz_flow_msg_identity_operation c WHERE a.message_id = c.message_id AND c.login_name = ?)
+[DEBUG] [2023-05-05 22:53:43] T:[187f919b99b041b3b9cb61a3d539484c] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-8] ==> ==> Parameters: admin(String), 1627840812937121794(String), admin(String)
+[DEBUG] [2023-05-05 22:53:43] T:[187f919b99b041b3b9cb61a3d539484c] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-8] ==> <==      Total: 1
+[INFO ] [2023-05-05 22:53:43] T:[187f919b99b041b3b9cb61a3d539484c] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-8] ==> 请求完成, url=/admin/flow/flowMessage/getMessageCount，elapse=27ms, respData={"data":{"copyMessageCount":0,"remindingMessageCount":0},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-05 22:53:53] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> 开始请求，url=/admin/upms/sysUser/list, reqData={"orderParam":[{"asc":true,"fieldName":"createTime"}],"sysUserDtoFilter":{},"pageParam":{"pageNum":1,"pageSize":10}}
+[DEBUG] [2023-05-05 22:53:53] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==>  Preparing: SELECT count(0) FROM sys_user WHERE sys_user.deleted_flag = 1
+[DEBUG] [2023-05-05 22:53:53] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==> Parameters: 
+[DEBUG] [2023-05-05 22:53:53] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:53:53] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==>  Preparing: SELECT * FROM sys_user WHERE sys_user.deleted_flag = 1 ORDER BY sys_user.create_time LIMIT ?
+[DEBUG] [2023-05-05 22:53:53] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==> Parameters: 10(Integer)
+[DEBUG] [2023-05-05 22:53:53] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:53:54] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==>  Preparing: SELECT dept_id,dept_name,show_order,parent_id,deleted_flag,province_id,province_name,city_id,city_name,create_user_id,create_time,update_user_id,update_time FROM sys_dept WHERE deleted_flag=1 AND (dept_id IN (?))
+[DEBUG] [2023-05-05 22:53:54] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==> Parameters: 1627840812937121794(Long)
+[DEBUG] [2023-05-05 22:53:54] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> <==      Total: 1
+[INFO ] [2023-05-05 22:53:54] T:[9c9234c670ff4cb397dbc8f59b74a051] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> 请求完成, url=/admin/upms/sysUser/list，elapse=216ms, respData={"data":{"dataList":[{"createTime":1682179200000,"createUserId":1627840812899373056,"deptId":1627840812937121794,"deptIdDictMap":{"name":"公司总部","id":1627840812937121794},"loginName":"admin","showName":"管理员","sysDataPermUserList":[],"sysUserRoleList":[],"updateTime":1682179200000,"updateUserId":1627840812899373056,"userId":1627840812899373056,"userStatus":0,"userStatusDictMap":{"name":"正常状态","id":0},"userType":0,"userTypeDictMap":{"name":"管理员","id":0}}],"totalCount":1},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> 开始请求，url=/admin/upms/sysUser/list, reqData={"orderParam":[{"asc":true,"fieldName":"createTime"}],"sysUserDtoFilter":{},"pageParam":{"pageNum":1,"pageSize":10}}
+[DEBUG] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==>  Preparing: SELECT count(0) FROM sys_user WHERE sys_user.deleted_flag = 1
+[DEBUG] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==> Parameters: 
+[DEBUG] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==>  Preparing: SELECT * FROM sys_user WHERE sys_user.deleted_flag = 1 ORDER BY sys_user.create_time LIMIT ?
+[DEBUG] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==> Parameters: 10(Integer)
+[DEBUG] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==>  Preparing: SELECT dept_id,dept_name,show_order,parent_id,deleted_flag,province_id,province_name,city_id,city_name,create_user_id,create_time,update_user_id,update_time FROM sys_dept WHERE deleted_flag=1 AND (dept_id IN (?))
+[DEBUG] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==> Parameters: 1627840812937121794(Long)
+[DEBUG] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> <==      Total: 1
+[INFO ] [2023-05-05 22:54:03] T:[3efc98ee53214409806186c8408d3c48] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> 请求完成, url=/admin/upms/sysUser/list，elapse=18ms, respData={"data":{"dataList":[{"createTime":1682179200000,"createUserId":1627840812899373056,"deptId":1627840812937121794,"deptIdDictMap":{"name":"公司总部","id":1627840812937121794},"loginName":"admin","showName":"管理员","sysDataPermUserList":[],"sysUserRoleList":[],"updateTime":1682179200000,"updateUserId":1627840812899373056,"userId":1627840812899373056,"userStatus":0,"userStatusDictMap":{"name":"正常状态","id":0},"userType":0,"userTypeDictMap":{"name":"管理员","id":0}}],"totalCount":1},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-05 22:54:51] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> 开始请求，url=/admin/upms/sysUser/list, reqData={"orderParam":[{"asc":true,"fieldName":"createTime"}],"sysUserDtoFilter":{},"pageParam":{"pageNum":1,"pageSize":10}}
+[WARN ] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 60035
+[DEBUG] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> ==>  Preparing: SELECT count(0) FROM sys_user WHERE sys_user.deleted_flag = 1
+[DEBUG] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> ==> Parameters: 
+[DEBUG] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> ==>  Preparing: SELECT * FROM sys_user WHERE sys_user.deleted_flag = 1 ORDER BY sys_user.create_time LIMIT ?
+[DEBUG] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> ==> Parameters: 10(Integer)
+[DEBUG] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> ==>  Preparing: SELECT dept_id,dept_name,show_order,parent_id,deleted_flag,province_id,province_name,city_id,city_name,create_user_id,create_time,update_user_id,update_time FROM sys_dept WHERE deleted_flag=1 AND (dept_id IN (?))
+[DEBUG] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> ==> Parameters: 1627840812937121794(Long)
+[DEBUG] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> <==      Total: 1
+[INFO ] [2023-05-05 22:55:03] T:[5d1975c123c0408da17dfddc1906beea] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-4] ==> 请求完成, url=/admin/upms/sysUser/list，elapse=11397ms, respData={"data":{"dataList":[{"createTime":1682179200000,"createUserId":1627840812899373056,"deptId":1627840812937121794,"deptIdDictMap":{"name":"公司总部","id":1627840812937121794},"loginName":"admin","showName":"管理员","sysDataPermUserList":[],"sysUserRoleList":[],"updateTime":1682179200000,"updateUserId":1627840812899373056,"userId":1627840812899373056,"userStatus":0,"userStatusDictMap":{"name":"正常状态","id":0},"userType":0,"userTypeDictMap":{"name":"管理员","id":0}}],"totalCount":1},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-05 22:55:07] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> 开始请求，url=/admin/upms/sysUser/list, reqData={"orderParam":[{"asc":true,"fieldName":"createTime"}],"sysUserDtoFilter":{},"pageParam":{"pageNum":1,"pageSize":10}}
+[DEBUG] [2023-05-05 22:55:40] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> ==>  Preparing: SELECT count(0) FROM sys_user WHERE sys_user.deleted_flag = 1
+[DEBUG] [2023-05-05 22:55:40] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> ==> Parameters: 
+[DEBUG] [2023-05-05 22:55:40] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:55:40] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> ==>  Preparing: SELECT * FROM sys_user WHERE sys_user.deleted_flag = 1 ORDER BY sys_user.create_time LIMIT ?
+[DEBUG] [2023-05-05 22:55:40] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> ==> Parameters: 10(Integer)
+[DEBUG] [2023-05-05 22:55:40] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:55:41] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> ==>  Preparing: SELECT dept_id,dept_name,show_order,parent_id,deleted_flag,province_id,province_name,city_id,city_name,create_user_id,create_time,update_user_id,update_time FROM sys_dept WHERE deleted_flag=1 AND (dept_id IN (?))
+[DEBUG] [2023-05-05 22:55:41] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> ==> Parameters: 1627840812937121794(Long)
+[DEBUG] [2023-05-05 22:55:41] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> <==      Total: 1
+[WARN ] [2023-05-05 22:56:14] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> 耗时较长的请求完成警告, url=/admin/upms/sysUser/list，elapse=66838ms reqData={"orderParam":[{"asc":true,"fieldName":"createTime"}],"sysUserDtoFilter":{},"pageParam":{"pageNum":1,"pageSize":10}} respData={"data":{"dataList":[{"createTime":1682179200000,"createUserId":1627840812899373056,"deptId":1627840812937121794,"deptIdDictMap":{"name":"公司总部","id":1627840812937121794},"loginName":"admin","showName":"管理员","sysDataPermUserList":[],"sysUserRoleList":[],"updateTime":1682179200000,"updateUserId":1627840812899373056,"userId":1627840812899373056,"userStatus":0,"userStatusDictMap":{"name":"正常状态","id":0},"userType":0,"userTypeDictMap":{"name":"管理员","id":0}}],"totalCount":1},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-05 22:56:14] T:[7d5fbcf88e8947239df4c9980d507bfc] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-2] ==> 请求完成, url=/admin/upms/sysUser/list，elapse=66838ms, respData={"data":{"dataList":[{"createTime":1682179200000,"createUserId":1627840812899373056,"deptId":1627840812937121794,"deptIdDictMap":{"name":"公司总部","id":1627840812937121794},"loginName":"admin","showName":"管理员","sysDataPermUserList":[],"sysUserRoleList":[],"updateTime":1682179200000,"updateUserId":1627840812899373056,"userId":1627840812899373056,"userStatus":0,"userStatusDictMap":{"name":"正常状态","id":0},"userType":0,"userTypeDictMap":{"name":"管理员","id":0}}],"totalCount":1},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-05 22:56:16] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> 开始请求，url=/admin/upms/sysUser/list, reqData={"orderParam":[{"asc":true,"fieldName":"createTime"}],"sysUserDtoFilter":{},"pageParam":{"pageNum":1,"pageSize":10}}
+[DEBUG] [2023-05-05 22:56:30] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==>  Preparing: SELECT count(0) FROM sys_user WHERE sys_user.deleted_flag = 1
+[DEBUG] [2023-05-05 22:56:30] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==> Parameters: 
+[DEBUG] [2023-05-05 22:56:30] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:56:30] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==>  Preparing: SELECT * FROM sys_user WHERE sys_user.deleted_flag = 1 ORDER BY sys_user.create_time LIMIT ?
+[DEBUG] [2023-05-05 22:56:30] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==> Parameters: 10(Integer)
+[DEBUG] [2023-05-05 22:56:30] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:56:30] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==>  Preparing: SELECT dept_id,dept_name,show_order,parent_id,deleted_flag,province_id,province_name,city_id,city_name,create_user_id,create_time,update_user_id,update_time FROM sys_dept WHERE deleted_flag=1 AND (dept_id IN (?))
+[DEBUG] [2023-05-05 22:56:30] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> ==> Parameters: 1627840812937121794(Long)
+[DEBUG] [2023-05-05 22:56:30] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> <==      Total: 1
+[INFO ] [2023-05-05 22:56:52] T:[852e4f101a9046f2be5dc711611f0900] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-5] ==> 请求完成, url=/admin/upms/sysUser/list，elapse=35967ms, respData={"data":{"dataList":[{"createTime":1682179200000,"createUserId":1627840812899373056,"deptId":1627840812937121794,"deptIdDictMap":{"name":"公司总部","id":1627840812937121794},"loginName":"admin","showName":"管理员","sysDataPermUserList":[],"sysUserRoleList":[],"updateTime":1682179200000,"updateUserId":1627840812899373056,"userId":1627840812899373056,"userStatus":0,"userStatusDictMap":{"name":"正常状态","id":0},"userType":0,"userTypeDictMap":{"name":"管理员","id":0}}],"totalCount":1},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-05 22:56:54] T:[552eccca8ba24d548605d81327912d58] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> 开始请求，url=/admin/upms/sysUser/list, reqData={"orderParam":[{"asc":true,"fieldName":"createTime"}],"sysUserDtoFilter":{},"pageParam":{"pageNum":1,"pageSize":10}}
+[DEBUG] [2023-05-05 22:57:05] T:[552eccca8ba24d548605d81327912d58] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==>  Preparing: SELECT count(0) FROM sys_user WHERE sys_user.deleted_flag = 1
+[DEBUG] [2023-05-05 22:57:05] T:[552eccca8ba24d548605d81327912d58] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==> Parameters: 
+[DEBUG] [2023-05-05 22:57:05] T:[552eccca8ba24d548605d81327912d58] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:57:05] T:[552eccca8ba24d548605d81327912d58] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==>  Preparing: SELECT * FROM sys_user WHERE sys_user.deleted_flag = 1 ORDER BY sys_user.create_time LIMIT ?
+[DEBUG] [2023-05-05 22:57:05] T:[552eccca8ba24d548605d81327912d58] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==> Parameters: 10(Integer)
+[DEBUG] [2023-05-05 22:57:05] T:[552eccca8ba24d548605d81327912d58] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> <==      Total: 1
+[DEBUG] [2023-05-05 22:57:25] T:[552eccca8ba24d548605d81327912d58] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==>  Preparing: SELECT dept_id,dept_name,show_order,parent_id,deleted_flag,province_id,province_name,city_id,city_name,create_user_id,create_time,update_user_id,update_time FROM sys_dept WHERE deleted_flag=1 AND (dept_id IN (?))
+[DEBUG] [2023-05-05 22:57:25] T:[552eccca8ba24d548605d81327912d58] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> ==> Parameters: 1627840812937121794(Long)
+[DEBUG] [2023-05-05 22:57:25] T:[552eccca8ba24d548605d81327912d58] S:[admin_4_c1fe151ab9da4abb90bf54819578472a] U:[1627840812899373056] [http-nio-8082-exec-1] ==> <==      Total: 1
