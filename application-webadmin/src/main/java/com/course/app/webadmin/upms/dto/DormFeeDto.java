@@ -13,15 +13,15 @@ import lombok.Data;
 @Data
 public class DormFeeDto {
 
-	@ApiModelProperty(value = "主键Id",required = true)
-	@NotNull(message = "主键Id不能为空！",groups = { UpdateGroup.class })
-	private Long id;
+    @ApiModelProperty(value = "主键Id", required = true)
+    @NotNull(message = "主键Id不能为空！", groups = { UpdateGroup.class })
+    private Long id;
 
-	@ApiModelProperty(value = "宿舍类型",required = true)
-	@NotBlank(message = "宿舍类型不能为空！")
-	private String dormType;
+    @ApiModelProperty(value = "宿舍类型", required = true)
+    @NotBlank(message = "宿舍类型不能为空！")
+    private String dormType;
 
-	@ApiModelProperty(value = "费用",required = true)
-	@NotNull(message = "费用不能为空！")
-	private Integer fee;
+    @ApiModelProperty(value = "费用", required = true)
+    @NotNull(message = "费用不能为空！")
+    private Integer fee;
 }

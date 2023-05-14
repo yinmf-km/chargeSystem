@@ -1,30 +1,41 @@
 package com.course.app.webadmin.upms.controller;
 
-import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
-import io.swagger.annotations.Api;
-import com.alibaba.fastjson.TypeReference;
-import lombok.extern.slf4j.Slf4j;
-import com.course.app.webadmin.upms.dto.SysPermCodeDto;
-import com.course.app.webadmin.upms.vo.SysPermCodeVo;
-import com.course.app.webadmin.upms.model.SysPermCode;
-import com.course.app.webadmin.upms.service.SysPermCodeService;
-import com.course.app.common.core.constant.ErrorCodeEnum;
-import com.course.app.common.core.object.*;
-import com.course.app.common.core.util.*;
-import com.course.app.common.core.validator.UpdateGroup;
-import com.course.app.common.core.annotation.MyRequestBody;
-import com.course.app.common.log.annotation.OperationLog;
-import com.course.app.common.log.model.constant.SysOperationLogType;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DuplicateKeyException;
-import org.springframework.web.bind.annotation.*;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import javax.validation.groups.Default;
-import java.util.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.alibaba.fastjson.TypeReference;
+import com.course.app.common.core.annotation.MyRequestBody;
+import com.course.app.common.core.constant.ErrorCodeEnum;
+import com.course.app.common.core.object.CallResult;
+import com.course.app.common.core.object.MyRelationParam;
+import com.course.app.common.core.object.ResponseResult;
+import com.course.app.common.core.util.MyCommonUtil;
+import com.course.app.common.core.util.MyModelUtil;
+import com.course.app.common.core.validator.UpdateGroup;
+import com.course.app.common.log.annotation.OperationLog;
+import com.course.app.common.log.model.constant.SysOperationLogType;
+import com.course.app.webadmin.upms.dto.SysPermCodeDto;
+import com.course.app.webadmin.upms.model.SysPermCode;
+import com.course.app.webadmin.upms.service.SysPermCodeService;
+import com.course.app.webadmin.upms.vo.SysPermCodeVo;
+import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
+
+import io.swagger.annotations.Api;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 权限字管理接口控制器类。
- *
  * @author 云翼
  * @date 2023-02-21
  */
@@ -34,162 +45,153 @@ import java.util.*;
 @RequestMapping("/admin/upms/sysPermCode")
 public class SysPermCodeController {
 
-    @Autowired
-    private SysPermCodeService sysPermCodeService;
+	@Autowired
+	private SysPermCodeService sysPermCodeService;
 
-    /**
-     * 新增权限字操作。
-     *
-     * @param sysPermCodeDto   新增权限字对象。
-     * @param permIdListString 与当前权限Id绑定的权限资源Id列表，多个权限资源之间逗号分隔。
-     * @return 应答结果对象，包含新增权限字的主键Id。
-     */
-    @ApiOperationSupport(ignoreParameters = {"sysPermCodeDto.permCodeId"})
-    @OperationLog(type = SysOperationLogType.ADD)
-    @PostMapping("/add")
-    public ResponseResult<Long> add(
-            @MyRequestBody SysPermCodeDto sysPermCodeDto, @MyRequestBody String permIdListString) {
-        String errorMessage = MyCommonUtil.getModelValidationError(sysPermCodeDto);
-        if (errorMessage != null) {
-            return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED);
-        }
-        SysPermCode sysPermCode = MyModelUtil.copyTo(sysPermCodeDto, SysPermCode.class);
-        CallResult result = sysPermCodeService.verifyRelatedData(sysPermCode, null, permIdListString);
-        if (!result.isSuccess()) {
-            return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, result.getErrorMessage());
-        }
-        Set<Long> permIdSet = null;
-        if (result.getData() != null) {
-            permIdSet = result.getData().getObject("permIdSet", new TypeReference<Set<Long>>(){});
-        }
-        sysPermCode = sysPermCodeService.saveNew(sysPermCode, permIdSet);
-        return ResponseResult.success(sysPermCode.getPermCodeId());
-    }
+	/**
+	 * 新增权限字操作。
+	 * @param sysPermCodeDto 新增权限字对象。
+	 * @param permIdListString 与当前权限Id绑定的权限资源Id列表，多个权限资源之间逗号分隔。
+	 * @return 应答结果对象，包含新增权限字的主键Id。
+	 */
+	@ApiOperationSupport(ignoreParameters = { "sysPermCodeDto.permCodeId" })
+	@OperationLog(type = SysOperationLogType.ADD)
+	@PostMapping("/add")
+	public ResponseResult<Long> add(@MyRequestBody SysPermCodeDto sysPermCodeDto, @MyRequestBody String permIdListString) {
+		String errorMessage = MyCommonUtil.getModelValidationError(sysPermCodeDto);
+		if (errorMessage != null) {
+			return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED);
+		}
+		SysPermCode sysPermCode = MyModelUtil.copyTo(sysPermCodeDto, SysPermCode.class);
+		CallResult result = sysPermCodeService.verifyRelatedData(sysPermCode, null, permIdListString);
+		if (!result.isSuccess()) {
+			return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, result.getErrorMessage());
+		}
+		Set<Long> permIdSet = null;
+		if (result.getData() != null) {
+			permIdSet = result.getData().getObject("permIdSet", new TypeReference<Set<Long>>() {
+			});
+		}
+		sysPermCode = sysPermCodeService.saveNew(sysPermCode, permIdSet);
+		return ResponseResult.success(sysPermCode.getPermCodeId());
+	}
 
-    /**
-     * 更新权限字操作。
-     *
-     * @param sysPermCodeDto   更新权限字对象。
-     * @param permIdListString 与当前权限Id绑定的权限资源Id列表，多个权限资源之间逗号分隔。
-     * @return 应答结果对象。
-     */
-    @OperationLog(type = SysOperationLogType.UPDATE)
-    @PostMapping("/update")
-    public ResponseResult<Void> update(
-            @MyRequestBody SysPermCodeDto sysPermCodeDto, @MyRequestBody String permIdListString) {
-        String errorMessage = MyCommonUtil.getModelValidationError(sysPermCodeDto, Default.class, UpdateGroup.class);
-        if (errorMessage != null) {
-            return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, errorMessage);
-        }
-        SysPermCode originalSysPermCode = sysPermCodeService.getById(sysPermCodeDto.getPermCodeId());
-        if (originalSysPermCode == null) {
-            errorMessage = "数据验证失败，当前权限字并不存在，请刷新后重试！";
-            return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST, errorMessage);
-        }
-        SysPermCode sysPermCode = MyModelUtil.copyTo(sysPermCodeDto, SysPermCode.class);
-        CallResult result = sysPermCodeService.verifyRelatedData(sysPermCode, originalSysPermCode, permIdListString);
-        if (!result.isSuccess()) {
-            return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, result.getErrorMessage());
-        }
-        Set<Long> permIdSet = null;
-        if (result.getData() != null) {
-            permIdSet = result.getData().getObject("permIdSet", new TypeReference<Set<Long>>(){});
-        }
-        try {
-            if (!sysPermCodeService.update(sysPermCode, originalSysPermCode, permIdSet)) {
-                errorMessage = "数据验证失败，当前权限字并不存在，请刷新后重试！";
-                return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST, errorMessage);
-            }
-        } catch (DuplicateKeyException e) {
-            errorMessage = "数据操作失败，权限字编码已经存在！";
-            return ResponseResult.error(ErrorCodeEnum.DUPLICATED_UNIQUE_KEY, errorMessage);
-        }
-        return ResponseResult.success();
-    }
+	/**
+	 * 更新权限字操作。
+	 * @param sysPermCodeDto 更新权限字对象。
+	 * @param permIdListString 与当前权限Id绑定的权限资源Id列表，多个权限资源之间逗号分隔。
+	 * @return 应答结果对象。
+	 */
+	@OperationLog(type = SysOperationLogType.UPDATE)
+	@PostMapping("/update")
+	public ResponseResult<Void> update(@MyRequestBody SysPermCodeDto sysPermCodeDto, @MyRequestBody String permIdListString) {
+		String errorMessage = MyCommonUtil.getModelValidationError(sysPermCodeDto, Default.class, UpdateGroup.class);
+		if (errorMessage != null) {
+			return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, errorMessage);
+		}
+		SysPermCode originalSysPermCode = sysPermCodeService.getById(sysPermCodeDto.getPermCodeId());
+		if (originalSysPermCode == null) {
+			errorMessage = "数据验证失败，当前权限字并不存在，请刷新后重试！";
+			return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST, errorMessage);
+		}
+		SysPermCode sysPermCode = MyModelUtil.copyTo(sysPermCodeDto, SysPermCode.class);
+		CallResult result = sysPermCodeService.verifyRelatedData(sysPermCode, originalSysPermCode, permIdListString);
+		if (!result.isSuccess()) {
+			return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, result.getErrorMessage());
+		}
+		Set<Long> permIdSet = null;
+		if (result.getData() != null) {
+			permIdSet = result.getData().getObject("permIdSet", new TypeReference<Set<Long>>() {
+			});
+		}
+		try {
+			if (!sysPermCodeService.update(sysPermCode, originalSysPermCode, permIdSet)) {
+				errorMessage = "数据验证失败，当前权限字并不存在，请刷新后重试！";
+				return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST, errorMessage);
+			}
+		} catch (DuplicateKeyException e) {
+			errorMessage = "数据操作失败，权限字编码已经存在！";
+			return ResponseResult.error(ErrorCodeEnum.DUPLICATED_UNIQUE_KEY, errorMessage);
+		}
+		return ResponseResult.success();
+	}
 
-    /**
-     * 删除指定权限字操作。
-     *
-     * @param permCodeId 指定的权限字主键Id。
-     * @return 应答结果对象。
-     */
-    @OperationLog(type = SysOperationLogType.DELETE)
-    @PostMapping("/delete")
-    public ResponseResult<Void> delete(@MyRequestBody Long permCodeId) {
-        if (MyCommonUtil.existBlankArgument(permCodeId)) {
-            return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
-        }
-        String errorMessage;
-        if (sysPermCodeService.hasChildren(permCodeId)) {
-            errorMessage = "数据验证失败，当前权限字存在下级权限字！";
-            return ResponseResult.error(ErrorCodeEnum.HAS_CHILDREN_DATA, errorMessage);
-        }
-        if (!sysPermCodeService.remove(permCodeId)) {
-            errorMessage = "数据操作失败，权限字不存在，请刷新后重试！";
-            return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST, errorMessage);
-        }
-        return ResponseResult.success();
-    }
+	/**
+	 * 删除指定权限字操作。
+	 * @param permCodeId 指定的权限字主键Id。
+	 * @return 应答结果对象。
+	 */
+	@OperationLog(type = SysOperationLogType.DELETE)
+	@PostMapping("/delete")
+	public ResponseResult<Void> delete(@MyRequestBody Long permCodeId) {
+		if (MyCommonUtil.existBlankArgument(permCodeId)) {
+			return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
+		}
+		String errorMessage;
+		if (sysPermCodeService.hasChildren(permCodeId)) {
+			errorMessage = "数据验证失败，当前权限字存在下级权限字！";
+			return ResponseResult.error(ErrorCodeEnum.HAS_CHILDREN_DATA, errorMessage);
+		}
+		if (!sysPermCodeService.remove(permCodeId)) {
+			errorMessage = "数据操作失败，权限字不存在，请刷新后重试！";
+			return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST, errorMessage);
+		}
+		return ResponseResult.success();
+	}
 
-    /**
-     * 查看权限字列表。
-     *
-     * @return 应答结果对象，包含权限字列表。
-     */
-    @PostMapping("/list")
-    public ResponseResult<List<SysPermCodeVo>> list() {
-        List<SysPermCode> sysPermCodeList =
-                sysPermCodeService.getAllListByOrder("permCodeType", "showOrder");
-        return ResponseResult.success(MyModelUtil.copyCollectionTo(sysPermCodeList, SysPermCodeVo.class));
-    }
+	/**
+	 * 查看权限字列表。
+	 * @return 应答结果对象，包含权限字列表。
+	 */
+	@PostMapping("/list")
+	public ResponseResult<List<SysPermCodeVo>> list() {
+		List<SysPermCode> sysPermCodeList = sysPermCodeService.getAllListByOrder("permCodeType", "showOrder");
+		return ResponseResult.success(MyModelUtil.copyCollectionTo(sysPermCodeList, SysPermCodeVo.class));
+	}
 
-    /**
-     * 查看权限字对象详情。
-     *
-     * @param permCodeId 指定权限字主键Id。
-     * @return 应答结果对象，包含权限字对象详情。
-     */
-    @GetMapping("/view")
-    public ResponseResult<SysPermCodeVo> view(@RequestParam Long permCodeId) {
-        if (MyCommonUtil.existBlankArgument(permCodeId)) {
-            return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
-        }
-        SysPermCode sysPermCode =
-                sysPermCodeService.getByIdWithRelation(permCodeId, MyRelationParam.full());
-        if (sysPermCode == null) {
-            return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST);
-        }
-        SysPermCodeVo sysPermCodeVo = MyModelUtil.copyTo(sysPermCode, SysPermCodeVo.class);
-        return ResponseResult.success(sysPermCodeVo);
-    }
+	/**
+	 * 查看权限字对象详情。
+	 * @param permCodeId 指定权限字主键Id。
+	 * @return 应答结果对象，包含权限字对象详情。
+	 */
+	@GetMapping("/view")
+	public ResponseResult<SysPermCodeVo> view(@RequestParam Long permCodeId) {
+		if (MyCommonUtil.existBlankArgument(permCodeId)) {
+			return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
+		}
+		SysPermCode sysPermCode = sysPermCodeService.getByIdWithRelation(permCodeId, MyRelationParam.full());
+		if (sysPermCode == null) {
+			return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST);
+		}
+		SysPermCodeVo sysPermCodeVo = MyModelUtil.copyTo(sysPermCode, SysPermCodeVo.class);
+		return ResponseResult.success(sysPermCodeVo);
+	}
 
-    /**
-     * 查询权限字的用户列表。同时返回详细的分配路径。
-     *
-     * @param permCodeId 权限字Id。
-     * @param loginName  登录名。
-     * @return 应答对象。包含从权限字到用户的完整权限分配路径信息的查询结果列表。
-     */
-    @GetMapping("/listSysUserWithDetail")
-    public ResponseResult<List<Map<String, Object>>> listSysUserWithDetail(Long permCodeId, String loginName) {
-        if (MyCommonUtil.isBlankOrNull(permCodeId)) {
-            return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
-        }
-        return ResponseResult.success(sysPermCodeService.getSysUserListWithDetail(permCodeId, loginName));
-    }
+	/**
+	 * 查询权限字的用户列表。同时返回详细的分配路径。
+	 * @param permCodeId 权限字Id。
+	 * @param loginName 登录名。
+	 * @return 应答对象。包含从权限字到用户的完整权限分配路径信息的查询结果列表。
+	 */
+	@GetMapping("/listSysUserWithDetail")
+	public ResponseResult<List<Map<String, Object>>> listSysUserWithDetail(Long permCodeId, String loginName) {
+		if (MyCommonUtil.isBlankOrNull(permCodeId)) {
+			return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
+		}
+		return ResponseResult.success(sysPermCodeService.getSysUserListWithDetail(permCodeId, loginName));
+	}
 
-    /**
-     * 查询权限字的角色列表。同时返回详细的分配路径。
-     *
-     * @param permCodeId 权限字Id。
-     * @param roleName   角色名。
-     * @return 应答对象。包含从权限字到角色的权限分配路径信息的查询结果列表。
-     */
-    @GetMapping("/listSysRoleWithDetail")
-    public ResponseResult<List<Map<String, Object>>> listSysRoleWithDetail(Long permCodeId, String roleName) {
-        if (MyCommonUtil.isBlankOrNull(permCodeId)) {
-            return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
-        }
-        return ResponseResult.success(sysPermCodeService.getSysRoleListWithDetail(permCodeId, roleName));
-    }
+	/**
+	 * 查询权限字的角色列表。同时返回详细的分配路径。
+	 * @param permCodeId 权限字Id。
+	 * @param roleName 角色名。
+	 * @return 应答对象。包含从权限字到角色的权限分配路径信息的查询结果列表。
+	 */
+	@GetMapping("/listSysRoleWithDetail")
+	public ResponseResult<List<Map<String, Object>>> listSysRoleWithDetail(Long permCodeId, String roleName) {
+		if (MyCommonUtil.isBlankOrNull(permCodeId)) {
+			return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
+		}
+		return ResponseResult.success(sysPermCodeService.getSysRoleListWithDetail(permCodeId, roleName));
+	}
 }

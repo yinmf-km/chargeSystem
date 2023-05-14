@@ -9,6 +9,7 @@ package com.course.app.common.core.util;
 public class RedisKeyUtil {
 
     private static final String SESSIONID_PREFIX = "SESSIONID:";
+    private static final String QYCG_PREFIX = "QYCG:";
 
     /**
      * 获取通用的session缓存的键前缀。
@@ -132,9 +133,12 @@ public class RedisKeyUtil {
         return "SESSION_CHILDREN_DEPT_ID:" + sessionId + "-" + deptIds;
     }
 
+    public static String makeRandomCodeH5Key(String phone, String code) {
+        return String.format("%s%s%s_%s", QYCG_PREFIX, "RANDOMCODE_H5:", phone, code);
+    }
+
     /**
      * 私有构造函数，明确标识该常量类的作用。
      */
-    private RedisKeyUtil() {
-    }
+    private RedisKeyUtil() {}
 }

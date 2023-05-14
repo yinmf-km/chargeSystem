@@ -1,32 +1,47 @@
 package com.course.app.webadmin.upms.controller;
 
-import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
-import io.swagger.annotations.Api;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import javax.validation.groups.Default;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.alibaba.fastjson.TypeReference;
-import com.github.pagehelper.Page;
-import com.github.pagehelper.page.PageMethod;
-import lombok.extern.slf4j.Slf4j;
+import com.course.app.common.core.annotation.MyRequestBody;
+import com.course.app.common.core.constant.ErrorCodeEnum;
+import com.course.app.common.core.object.CallResult;
+import com.course.app.common.core.object.MyOrderParam;
+import com.course.app.common.core.object.MyPageData;
+import com.course.app.common.core.object.MyPageParam;
+import com.course.app.common.core.object.MyRelationParam;
+import com.course.app.common.core.object.ResponseResult;
+import com.course.app.common.core.util.MyCommonUtil;
+import com.course.app.common.core.util.MyModelUtil;
+import com.course.app.common.core.util.MyPageUtil;
+import com.course.app.common.core.validator.UpdateGroup;
+import com.course.app.common.log.annotation.OperationLog;
+import com.course.app.common.log.model.constant.SysOperationLogType;
 import com.course.app.webadmin.upms.dto.SysDataPermDto;
 import com.course.app.webadmin.upms.dto.SysUserDto;
-import com.course.app.webadmin.upms.vo.SysDataPermVo;
-import com.course.app.webadmin.upms.vo.SysUserVo;
 import com.course.app.webadmin.upms.model.SysDataPerm;
 import com.course.app.webadmin.upms.model.SysUser;
 import com.course.app.webadmin.upms.service.SysDataPermService;
 import com.course.app.webadmin.upms.service.SysUserService;
-import com.course.app.common.core.validator.UpdateGroup;
-import com.course.app.common.core.constant.ErrorCodeEnum;
-import com.course.app.common.core.object.*;
-import com.course.app.common.core.util.*;
-import com.course.app.common.core.annotation.MyRequestBody;
-import com.course.app.common.log.annotation.OperationLog;
-import com.course.app.common.log.model.constant.SysOperationLogType;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import com.course.app.webadmin.upms.vo.SysDataPermVo;
+import com.course.app.webadmin.upms.vo.SysUserVo;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.page.PageMethod;
+import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 
-import javax.validation.groups.Default;
-import java.util.*;
-import java.util.stream.Collectors;
+import io.swagger.annotations.Api;
 
 /**
  * 数据权限接口控制器对象。
@@ -40,7 +55,6 @@ public class SysDataPermController {
 
 	@Autowired
 	private SysDataPermService sysDataPermService;
-
 	@Autowired
 	private SysUserService sysUserService;
 

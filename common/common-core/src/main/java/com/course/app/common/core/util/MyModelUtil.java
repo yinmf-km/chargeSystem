@@ -747,7 +747,7 @@ public class MyModelUtil {
      */
     public static <M> void fillCommonsForInsert(M data) {
         Field createdByField = ReflectUtil.getField(data.getClass(), CREATE_USER_ID_FIELD_NAME);
-        if (createdByField != null) {
+        if (createdByField != null && TokenData.takeFromRequest() != null) {
             ReflectUtil.setFieldValue(data, createdByField, TokenData.takeFromRequest().getUserId());
         }
         Field createTimeField = ReflectUtil.getField(data.getClass(), CREATE_TIME_FIELD_NAME);
@@ -755,7 +755,7 @@ public class MyModelUtil {
             ReflectUtil.setFieldValue(data, createTimeField, new Date());
         }
         Field updatedByField = ReflectUtil.getField(data.getClass(), UPDATE_USER_ID_FIELD_NAME);
-        if (updatedByField != null) {
+        if (updatedByField != null && TokenData.takeFromRequest() != null) {
             ReflectUtil.setFieldValue(data, updatedByField, TokenData.takeFromRequest().getUserId());
         }
         Field updateTimeField = ReflectUtil.getField(data.getClass(), UPDATE_TIME_FIELD_NAME);

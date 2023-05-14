@@ -41,7 +41,6 @@ public class DormFeeFreeDetailController {
 
 	@Autowired
 	private DormFeeFreeDetailService DormFeeFreeDetailService;
-
 	@Autowired
 	private IdGeneratorWrapper idGenerator;
 

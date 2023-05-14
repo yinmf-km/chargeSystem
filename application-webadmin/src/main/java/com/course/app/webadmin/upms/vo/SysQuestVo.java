@@ -5,15 +5,15 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-@ApiModel("DormFeeVo视图对象")
+@ApiModel("SysQuestVo视图对象")
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class DormFeeVo extends BaseVo {
+public class SysQuestVo extends BaseVo {
 
 	@ApiModelProperty(value = "主键Id")
 	private Long id;
-	@ApiModelProperty(value = "宿舍类型")
-	private String dormType;
-	@ApiModelProperty(value = "费用")
-	private Integer fee;
+	@ApiModelProperty(value = "问题名称")
+	private String questName;
+	@ApiModelProperty(value = "问题答案")
+	private String questAnswer;
 }

@@ -1,11 +1,11 @@
 package com.course.app.common.core.object;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * 分页数据的应答返回对象。
@@ -14,8 +14,8 @@ import java.util.List;
  * @date 2023-02-21
  */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class MyPageData<T> {
     /**
      * 数据列表。

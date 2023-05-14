@@ -39,75 +39,75 @@ import io.swagger.annotations.Api;
 @RequestMapping("/admin/upms/dormFee")
 public class DormFeeController {
 
-	@Autowired
-	private DormFeeService dormFeeService;
+    @Autowired
+    private DormFeeService dormFeeService;
+    @Autowired
+    private IdGeneratorWrapper idGenerator;
 
-	@Autowired
-	private IdGeneratorWrapper idGenerator;
+    /**
+     * 住宿费信息新增
+     */
+    @OperationLog(type = SysOperationLogType.ADD)
+    @PostMapping("/add")
+    public ResponseResult<Long> add(@MyRequestBody DormFeeDto dormFeeDto) {
+        String errorMessage = MyCommonUtil.getModelValidationError(dormFeeDto, false);
+        if (errorMessage != null) {
+            return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, errorMessage);
+        }
+        DormFee dormFee = MyModelUtil.copyTo(dormFeeDto, DormFee.class);
+        dormFee.setId(idGenerator.nextLongId());
+        MyModelUtil.fillCommonsForInsert(dormFee);
+        dormFeeService.save(dormFee);
+        return ResponseResult.success(dormFee.getId());
+    }
 
-	/**
-	 * 住宿费信息新增
-	 */
-	@OperationLog(type = SysOperationLogType.ADD)
-	@PostMapping("/add")
-	public ResponseResult<Long> add(@MyRequestBody DormFeeDto dormFeeDto) {
-		String errorMessage = MyCommonUtil.getModelValidationError(dormFeeDto, false);
-		if (errorMessage != null) {
-			return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, errorMessage);
-		}
-		DormFee dormFee = MyModelUtil.copyTo(dormFeeDto, DormFee.class);
-		dormFee.setId(idGenerator.nextLongId());
-		MyModelUtil.fillCommonsForInsert(dormFee);
-		dormFeeService.save(dormFee);
-		return ResponseResult.success(dormFee.getId());
-	}
+    /**
+     * 住宿费信息修改
+     */
+    @OperationLog(type = SysOperationLogType.UPDATE)
+    @PostMapping("/update")
+    public ResponseResult<Void> update(@MyRequestBody DormFeeDto dormFeeDto) {
+        String errorMessage = MyCommonUtil.getModelValidationError(dormFeeDto, false);
+        if (errorMessage != null) {
+            return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, errorMessage);
+        }
+        if (null == dormFeeService.getById(dormFeeDto.getId())) {
+            return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST);
+        }
+        DormFee dormFeeNew = MyModelUtil.copyTo(dormFeeDto, DormFee.class);
+        MyModelUtil.fillCommonsForInsert(dormFeeNew);
+        dormFeeService.updateById(dormFeeNew);
+        return ResponseResult.success();
+    }
 
-	/**
-	 * 住宿费信息修改
-	 */
-	@OperationLog(type = SysOperationLogType.UPDATE)
-	@PostMapping("/update")
-	public ResponseResult<Void> update(@MyRequestBody DormFeeDto dormFeeDto) {
-		String errorMessage = MyCommonUtil.getModelValidationError(dormFeeDto, false);
-		if (errorMessage != null) {
-			return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, errorMessage);
-		}
-		if (null == dormFeeService.getById(dormFeeDto.getId())) {
-			return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST);
-		}
-		DormFee dormFeeNew = MyModelUtil.copyTo(dormFeeDto, DormFee.class);
-		MyModelUtil.fillCommonsForInsert(dormFeeNew);
-		dormFeeService.updateById(dormFeeNew);
-		return ResponseResult.success();
-	}
+    /**
+     * 住宿费信息删除
+     */
+    @OperationLog(type = SysOperationLogType.DELETE)
+    @PostMapping("/delete")
+    public ResponseResult<Void> delete(@MyRequestBody Long id) {
+        if (MyCommonUtil.existBlankArgument(id)) {
+            return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
+        }
+        if (null == dormFeeService.getById(id)) {
+            return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST);
+        }
+        dormFeeService.removeById(id);
+        return ResponseResult.success();
+    }
 
-	/**
-	 * 住宿费信息删除
-	 */
-	@OperationLog(type = SysOperationLogType.DELETE)
-	@PostMapping("/delete")
-	public ResponseResult<Void> delete(@MyRequestBody Long id) {
-		if (MyCommonUtil.existBlankArgument(id)) {
-			return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
-		}
-		if (null == dormFeeService.getById(id)) {
-			return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST);
-		}
-		dormFeeService.removeById(id);
-		return ResponseResult.success();
-	}
-
-	/**
-	 * 住宿费信息查询
-	 */
-	@OperationLog(type = SysOperationLogType.LIST)
-	@PostMapping("/list")
-	public ResponseResult<MyPageData<DormFeeVo>> list(@MyRequestBody DormFeeDto dormFeeDtoFilter, @MyRequestBody MyPageParam pageParam) {
-		if (pageParam != null) {
-			PageMethod.startPage(pageParam.getPageNum(), pageParam.getPageSize());
-		}
-		DormFee dormFee = MyModelUtil.copyTo(dormFeeDtoFilter, DormFee.class);
-		List<DormFee> dormFees = dormFeeService.getListByFilter(dormFee);
-		return ResponseResult.success(MyPageUtil.makeResponseData(dormFees, DormFee.INSTANCE));
-	}
+    /**
+     * 住宿费信息查询
+     */
+    @OperationLog(type = SysOperationLogType.LIST)
+    @PostMapping("/list")
+    public ResponseResult<MyPageData<DormFeeVo>> list(@MyRequestBody DormFeeDto dormFeeDtoFilter,
+        @MyRequestBody MyPageParam pageParam) {
+        if (pageParam != null) {
+            PageMethod.startPage(pageParam.getPageNum(), pageParam.getPageSize());
+        }
+        DormFee dormFee = MyModelUtil.copyTo(dormFeeDtoFilter, DormFee.class);
+        List<DormFee> dormFees = dormFeeService.getListByFilter(dormFee);
+        return ResponseResult.success(MyPageUtil.makeResponseData(dormFees, DormFee.INSTANCE));
+    }
 }

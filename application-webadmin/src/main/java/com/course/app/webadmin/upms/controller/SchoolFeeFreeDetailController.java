@@ -43,7 +43,6 @@ public class SchoolFeeFreeDetailController {
 
 	@Autowired
 	private SchoolFeeFreeDetailService schoolFeeFreeDetailService;
-
 	@Autowired
 	private IdGeneratorWrapper idGenerator;
 

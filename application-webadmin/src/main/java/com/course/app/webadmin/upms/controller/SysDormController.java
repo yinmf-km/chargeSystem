@@ -41,7 +41,6 @@ public class SysDormController {
 
 	@Autowired
 	private SysDormService sysDormService;
-
 	@Autowired
 	private IdGeneratorWrapper idGenerator;
 

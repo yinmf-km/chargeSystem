@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.course.app.common.core.annotation.MyRequestBody;
 import com.course.app.common.core.constant.ErrorCodeEnum;
 import com.course.app.common.core.object.MyPageData;
-import com.course.app.common.core.object.MyPageParam;
 import com.course.app.common.core.object.ResponseResult;
 import com.course.app.common.core.util.MyCommonUtil;
 import com.course.app.common.core.util.MyModelUtil;
@@ -18,70 +18,69 @@ import com.course.app.common.core.util.MyPageUtil;
 import com.course.app.common.log.annotation.OperationLog;
 import com.course.app.common.log.model.constant.SysOperationLogType;
 import com.course.app.common.sequence.wrapper.IdGeneratorWrapper;
-import com.course.app.webadmin.upms.dto.SchoolFeeDto;
-import com.course.app.webadmin.upms.model.SchoolFee;
-import com.course.app.webadmin.upms.service.SchoolFeeService;
-import com.course.app.webadmin.upms.vo.SchoolFeeVo;
-import com.github.pagehelper.page.PageMethod;
+import com.course.app.webadmin.upms.dto.SysQuestDto;
+import com.course.app.webadmin.upms.model.SysQuest;
+import com.course.app.webadmin.upms.service.SysQuestService;
+import com.course.app.webadmin.upms.vo.SysQuestVo;
 
 import io.swagger.annotations.Api;
 
 /**
- * @Description 学费管理控制器类
- * @author yinmf
- * @Title SysDormController.java
+ * @Description 问题控制器
+ * @author 尹孟飞 E-mail：yinmf@asiainfo.com
+ * @Title SysQuestController.java
  * @Package com.course.app.webadmin.upms.controller
- * @date 2023年5月3日 下午10:47:22
+ * @date 2023年5月8日 下午11:06:37
  * @version V1.0
  */
-@Api(tags = "学费管理接口")
+@Api(tags = "角色管理接口")
 @RestController
-@RequestMapping("/admin/upms/schoolFee")
-public class SchoolFeeController {
+@RequestMapping("/admin/upms/sysQuest")
+public class SysQuestController {
 
 	@Autowired
-	private SchoolFeeService schoolFeeService;
+	private SysQuestService sysQuestService;
 	@Autowired
 	private IdGeneratorWrapper idGenerator;
 
 	/**
-	 * 学费信息新增
+	 * 系统问题新增
 	 */
 	@OperationLog(type = SysOperationLogType.ADD)
 	@PostMapping("/add")
-	public ResponseResult<Long> add(@MyRequestBody SchoolFeeDto schoolFeeDto) {
-		String errorMessage = MyCommonUtil.getModelValidationError(schoolFeeDto, false);
+	public ResponseResult<Long> add(@MyRequestBody SysQuestDto sysQuestDto) {
+		String errorMessage = MyCommonUtil.getModelValidationError(sysQuestDto, false);
 		if (errorMessage != null) {
 			return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, errorMessage);
 		}
-		SchoolFee schoolFee = MyModelUtil.copyTo(schoolFeeDto, SchoolFee.class);
-		schoolFee.setId(idGenerator.nextLongId());
-		MyModelUtil.fillCommonsForInsert(schoolFee);
-		schoolFeeService.save(schoolFee);
-		return ResponseResult.success(schoolFee.getId());
+		SysQuest sysQuest = MyModelUtil.copyTo(sysQuestDto, SysQuest.class);
+		sysQuest.setId(idGenerator.nextLongId());
+		MyModelUtil.fillCommonsForInsert(sysQuest);
+		sysQuestService.save(sysQuest);
+		return ResponseResult.success(sysQuest.getId());
 	}
 
 	/**
-	 * 学费信息修改
+	 * 系统问题修改
 	 */
 	@OperationLog(type = SysOperationLogType.UPDATE)
 	@PostMapping("/update")
-	public ResponseResult<Void> update(@MyRequestBody SchoolFeeDto schoolFeeDto) {
-		String errorMessage = MyCommonUtil.getModelValidationError(schoolFeeDto, false);
+	public ResponseResult<Void> update(@MyRequestBody SysQuestDto sysQuestDto) {
+		String errorMessage = MyCommonUtil.getModelValidationError(sysQuestDto, false);
 		if (errorMessage != null) {
 			return ResponseResult.error(ErrorCodeEnum.DATA_VALIDATED_FAILED, errorMessage);
 		}
-		if (null == schoolFeeService.getById(schoolFeeDto.getId())) {
+		if (null == sysQuestService.getById(sysQuestDto.getId())) {
 			return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST);
 		}
-		SchoolFee schoolFee = MyModelUtil.copyTo(schoolFeeDto, SchoolFee.class);
-		MyModelUtil.fillCommonsForInsert(schoolFee);
-		schoolFeeService.updateById(schoolFee);
+		SysQuest sysQuest = MyModelUtil.copyTo(sysQuestDto, SysQuest.class);
+		MyModelUtil.fillCommonsForInsert(sysQuest);
+		sysQuestService.updateById(sysQuest);
 		return ResponseResult.success();
 	}
 
 	/**
-	 * 学费信息删除
+	 * 系统问题删除
 	 */
 	@OperationLog(type = SysOperationLogType.DELETE)
 	@PostMapping("/delete")
@@ -89,24 +88,20 @@ public class SchoolFeeController {
 		if (MyCommonUtil.existBlankArgument(id)) {
 			return ResponseResult.error(ErrorCodeEnum.ARGUMENT_NULL_EXIST);
 		}
-		if (null == schoolFeeService.getById(id)) {
+		if (null == sysQuestService.getById(id)) {
 			return ResponseResult.error(ErrorCodeEnum.DATA_NOT_EXIST);
 		}
-		schoolFeeService.removeById(id);
+		sysQuestService.removeById(id);
 		return ResponseResult.success();
 	}
 
 	/**
-	 * 学费信息查询
+	 * 系统问题查询
 	 */
 	@OperationLog(type = SysOperationLogType.LIST)
 	@PostMapping("/list")
-	public ResponseResult<MyPageData<SchoolFeeVo>> list(@MyRequestBody SchoolFeeDto schoolFeeDtoFilter, @MyRequestBody MyPageParam pageParam) {
-		if (pageParam != null) {
-			PageMethod.startPage(pageParam.getPageNum(), pageParam.getPageSize());
-		}
-		SchoolFee schoolFee = MyModelUtil.copyTo(schoolFeeDtoFilter, SchoolFee.class);
-		List<SchoolFee> schoolFees = schoolFeeService.getListByFilter(schoolFee);
-		return ResponseResult.success(MyPageUtil.makeResponseData(schoolFees, SchoolFee.INSTANCE));
+	public ResponseResult<MyPageData<SysQuestVo>> list() {
+		List<SysQuest> sysQuests = sysQuestService.list(Wrappers.<SysQuest> lambdaQuery().eq(SysQuest::getDeletedFlag, 1));
+		return ResponseResult.success(MyPageUtil.makeResponseData(sysQuests, SysQuest.INSTANCE));
 	}
 }

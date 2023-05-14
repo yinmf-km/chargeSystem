@@ -1,8 +1,11 @@
 package com.course.app.webadmin.upms.model;
 
-import org.mapstruct.Mapper;
+import java.sql.Date;
+
+import org.apache.ibatis.annotations.Mapper;
 import org.mapstruct.factory.Mappers;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -26,86 +29,160 @@ import lombok.EqualsAndHashCode;
 @TableName(value = "sys_student")
 public class SysStudent extends BaseModel {
 
-	/**
-	 * 学号
-	 */
-	@TableId(value = "student_no")
-	private String studentNo;
+    /**
+     * 主键ID
+     */
+    @TableId(value = "student_id")
+    private Long studentId;
+    /**
+     * 学号
+     */
+    @TableField("student_no")
+    private String studentNo;
 
-	/**
-	 * 学生名称
-	 */
-	private String studentName;
+    /**
+     * 学生名称
+     */
+    @TableField("student_name")
+    private String studentName;
 
-	/**
-	 * 性别(1:男 2:女)
-	 */
-	private Integer sex;
+    /**
+     * 性别(1:男 2:女)
+     */
+    @TableField("sex")
+    private Integer sex;
 
-	/**
-	 * 身份证号码
-	 */
-	private String identityCard;
+    /**
+     * 身份证号码
+     */
+    @TableField("identity_card")
+    private String identityCard;
 
-	/**
-	 * 地址
-	 */
-	private String address;
+    /**
+     * 家庭地址
+     */
+    @TableField("home_address")
+    private String homeAddress;
 
-	/**
-	 * 毕业学校
-	 */
-	private String gradeSchool;
+    /**
+     * 户籍地址
+     */
+    @TableField("domicile_address")
+    private String domicileAddress;
 
-	/**
-	 * 中考分数
-	 */
-	private Integer mseScore;
+    /**
+     * 毕业学校
+     */
+    @TableField("grade_school")
+    private String gradeSchool;
 
-	/**
-	 * 学籍
-	 */
-	private String studentStatusDistId;
+    /**
+     * 中考分数
+     */
+    @TableField("mse_score")
+    private Integer mseScore;
 
-	/**
-	 * 班级
-	 */
-	private Long classId;
+    /**
+     * 生源地名称
+     */
 
-	/**
-	 * 住宿类型
-	 */
-	private String dormType;
+    @TableField("student_status_dist_nm")
+    private String studentStatusDistNm;
 
-	/**
-	 * 宿舍号
-	 */
-	private String dormCode;
+    /**
+     * 宿舍Id
+     */
+    @TableField("dorm_id")
+    private Long dormId;
 
-	/**
-	 * 是否贫困生(0:不是 1:是)
-	 */
-	private Boolean poorFlag;
+    /**
+     * 班级ID
+     */
+    @TableField("class_id")
+    private Long classId;
 
-	/**
-	 * 抚养人
-	 */
-	private String dependant;
+    /**
+     * 是否贫困生(0:不是 1:是)
+     */
+    @TableField("poor_flag")
+    private Boolean poorFlag;
 
-	/**
-	 * 学费支付方式(1:现金 2:银行卡 3:微信 4:支付宝)
-	 */
-	private Integer payType;
+    /**
+     * 抚养人
+     */
+    @TableField("dependant")
+    private String dependant;
 
-	/**
-	 * 逻辑删除标记字段(1: 正常 -1: 已删除)。
-	 */
-	@TableLogic
-	private Integer deletedFlag;
+    /**
+     * 学生绑定手机号码
+     */
+    @TableField("phone_num")
+    private String phoneNum;
 
-	@Mapper
-	public interface SysStudentModelMapper extends BaseModelMapper<SysStudentVo, SysStudent> {
-	}
+    /**
+     * 学费支付方式(1:现金 2:银行卡 3:微信 4:支付宝)
+     */
+    @TableField("pay_type")
+    private Integer payType;
 
-	public static final SysStudentModelMapper INSTANCE = Mappers.getMapper(SysStudentModelMapper.class);
+    /**
+     * 逻辑删除标记字段(1: 正常 -1: 已删除)。
+     */
+    @TableLogic
+    @TableField("deleted_flag")
+    private Integer deletedFlag;
+
+    /**
+     * 政治面貌
+     */
+    @TableField("political_outlook")
+    private String politicalOutlook;
+
+    /**
+     * 学籍类型(1:统招 2:民办 3:借读)
+     */
+    @TableField("status_type")
+    private Integer statusType;
+
+    /**
+     * 家长备注
+     */
+    @TableField("parent_notes")
+    private String parentNotes;
+
+    /**
+     * 学籍状态(1:入学 2:休学 3:退学)
+     */
+    @TableField("student_status")
+    private Integer studentStatus;
+
+    /**
+     * 入学时间
+     */
+    @TableField("enrol_time")
+    private Date enrolTime;
+
+    /**
+     * 退学时间
+     */
+    @TableField("dropout_time")
+    private Date dropoutTime;
+
+    /**
+     * 休学时间
+     */
+    @TableField("ost_time")
+    private Date ostTime;
+
+    /**
+     * 注册来源(1:手机端 2:PC)
+     */
+    @TableField("register_type")
+    private Integer registerType;
+
+    @Mapper
+    public interface SysStudentModelMapper extends BaseModelMapper<SysStudentVo, SysStudent> {}
+
+    public static final SysStudentModelMapper INSTANCE =
+        Mappers.getMapper(SysStudentModelMapper.class);
 }
