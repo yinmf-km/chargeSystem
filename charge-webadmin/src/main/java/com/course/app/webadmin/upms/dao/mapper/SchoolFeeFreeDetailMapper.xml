@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.app.webadmin.upms.dao.SchoolFeeFreeDetailMapper">
+    <resultMap id="BaseResultMap" type="com.course.app.webadmin.upms.model.SchoolFeeFreeDetail">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="student_id" jdbcType="BIGINT" property="studentId"/>
+        <result column="process_flag" jdbcType="INTEGER" property="processFlag"/>
+        <result column="approve_id" jdbcType="BIGINT" property="approveId"/>
+        <result column="approve_time" jdbcType="BIGINT" property="approveTime"/>
+        <result column="create_user_id" jdbcType="BIGINT" property="createUserId"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="deleted_flag" jdbcType="INTEGER" property="deletedFlag"/>
+    </resultMap>
+
+    <insert id="insertList">
+        INSERT INTO school_fee_free_detail
+            (id,
+            student_id,
+            process_flag,
+            approve_id,
+            approve_time,
+            create_user_id,
+            create_time,
+            deleted_flag)
+        VALUES
+        <foreach collection="list" index="index" item="item" separator="," >
+            (#{item.id},
+            #{item.studentId},
+            #{item.processFlag},
+            #{item.approveId},
+            #{item.approveTime},
+            #{item.createUserId},
+            #{item.createTime},
+            #{item.deletedFlag})
+        </foreach>
+    </insert>
+
+    <!-- 如果有逻辑删除字段过滤，请写到这里 -->
+    <sql id="filterRef">
+        <!-- 这里必须加上全包名，否则当filterRef被其他Mapper.xml包含引用的时候，就会调用Mapper.xml中的该SQL片段 -->
+        <include refid="com.course.app.webadmin.upms.dao.SchoolFeeFreeDetailMapper.inputFilterRef"/>
+        AND school_fee_free_detail.deleted_flag = ${@com.course.app.common.core.constant.GlobalDeletedFlag@NORMAL}
+    </sql>
+
+    <!-- 这里仅包含调用接口输入的主表过滤条件 -->
+    <sql id="inputFilterRef">
+        <if test="schoolFeeFreeDetailFilter != null">
+        </if>
+    </sql>
+
+    <select id="getSchoolFeeFreeDetailList" resultMap="BaseResultMap" parameterType="com.course.app.webadmin.upms.model.SchoolFeeFreeDetail">
+        SELECT * FROM school_fee_free_detail
+        <where>
+            <include refid="filterRef"/>
+        </where>
+        <if test="orderBy != null and orderBy != ''">
+            ORDER BY ${orderBy}
+        </if>
+    </select>
+</mapper>

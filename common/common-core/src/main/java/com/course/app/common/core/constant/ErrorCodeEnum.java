@@ -28,6 +28,7 @@ public enum ErrorCodeEnum {
     NO_ACCESS_PERMISSION("当前用户没有访问权限，请核对！"), NO_OPERATION_PERMISSION("当前用户没有操作权限，请核对！"),
 
     PASSWORD_ERR("密码错误，请重试！"), PHONENUM_ERR("手机号码格式错误！"), SMSCODE_ERR("验证码错误！"),
+    SMSCODE_SEND_ERR("验证动态码短信下发失败！"),
     SMSCODE_EXPIRE("验证码已失效，请重新获取！"), INVALID_USERNAME_PASSWORD("用户名或密码错误，请重试！"),
     INVALID_ACCESS_TOKEN("无效的用户访问令牌！"), INVALID_USER_STATUS("用户状态错误，请刷新后重试！"),
     INVALID_TENANT_CODE("指定的租户编码并不存在，请刷新后重试！"), INVALID_TENANT_STATUS("当前租户为不可用状态，请刷新后重试！"),
@@ -47,9 +48,14 @@ public enum ErrorCodeEnum {
      */
     STUDENT_NOT_EXIST("该学生不存在，请核对！"),
     /**
+     * 该费用不存在，请核对！
+     */
+    FEE_NOT_EXIST("该费用不存在，请核对！"),
+    /**
      * 该学生状态异常，请核对！
      */
     STUDENT_STATUS_ERROR("该学生状态异常，请核对！"),
+    TOKEN_PHONE_NOT_EXIST("会话信息号码获取异常，请请联系管理员！"),
 
     DATA_PARENT_ID_NOT_EXIST("数据验证失败，ParentId不存在，请核对！"),
     INVALID_RELATED_RECORD_ID("数据验证失败，关联数据并不存在，请刷新后重试！"), INVALID_DATA_MODEL("数据验证失败，无效的数据实体对象！"),

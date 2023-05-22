@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.app.webadmin.upms.dao.CollegeScoreMapper">
+    <resultMap id="BaseResultMap" type="com.course.app.webadmin.upms.model.CollegeScore">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="student_name" jdbcType="VARCHAR" property="studentName"/>
+        <result column="sex" jdbcType="INTEGER" property="sex"/>
+        <result column="identity_card" jdbcType="VARCHAR" property="identityCard"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="grade_school" jdbcType="VARCHAR" property="gradeSchool"/>
+        <result column="mse_score" jdbcType="INTEGER" property="mseScore"/>
+        <result column="student_status_dist_id" jdbcType="VARCHAR" property="studentStatusDistId"/>
+        <result column="process_flag" jdbcType="INTEGER" property="processFlag"/>
+        <result column="approve_id" jdbcType="BIGINT" property="approveId"/>
+        <result column="approve_time" jdbcType="BIGINT" property="approveTime"/>
+        <result column="create_user_id" jdbcType="BIGINT" property="createUserId"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_user_id" jdbcType="BIGINT" property="updateUserId"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="deleted_flag" jdbcType="INTEGER" property="deletedFlag"/>
+    </resultMap>
+
+    <insert id="insertList">
+        INSERT INTO college_score
+            (id,
+            student_name,
+            sex,
+            identity_card,
+            address,
+            grade_school,
+            mse_score,
+            student_status_dist_id,
+            process_flag,
+            approve_id,
+            approve_time,
+            create_user_id,
+            create_time,
+            update_user_id,
+            update_time,
+            deleted_flag)
+        VALUES
+        <foreach collection="list" index="index" item="item" separator="," >
+            (#{item.id},
+            #{item.studentName},
+            #{item.sex},
+            #{item.identityCard},
+            #{item.address},
+            #{item.gradeSchool},
+            #{item.mseScore},
+            #{item.studentStatusDistId},
+            #{item.processFlag},
+            #{item.approveId},
+            #{item.approveTime},
+            #{item.createUserId},
+            #{item.createTime},
+            #{item.updateUserId},
+            #{item.updateTime},
+            #{item.deletedFlag})
+        </foreach>
+    </insert>
+
+    <!-- 如果有逻辑删除字段过滤，请写到这里 -->
+    <sql id="filterRef">
+        <!-- 这里必须加上全包名，否则当filterRef被其他Mapper.xml包含引用的时候，就会调用Mapper.xml中的该SQL片段 -->
+        <include refid="com.course.app.webadmin.upms.dao.CollegeScoreMapper.inputFilterRef"/>
+        AND college_score.deleted_flag = ${@com.course.app.common.core.constant.GlobalDeletedFlag@NORMAL}
+    </sql>
+
+    <!-- 这里仅包含调用接口输入的主表过滤条件 -->
+    <sql id="inputFilterRef">
+        <if test="collegeScoreFilter != null">
+        </if>
+    </sql>
+
+    <select id="getCollegeScoreList" resultMap="BaseResultMap" parameterType="com.course.app.webadmin.upms.model.CollegeScore">
+        SELECT * FROM college_score
+        <where>
+            <include refid="filterRef"/>
+        </where>
+        <if test="orderBy != null and orderBy != ''">
+            ORDER BY ${orderBy}
+        </if>
+    </select>
+</mapper>

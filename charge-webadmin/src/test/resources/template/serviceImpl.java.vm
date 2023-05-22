@@ -1,0 +1,27 @@
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${table.entityName};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import org.springframework.stereotype.Service;
+
+/**
+ * <p>
+ * $!{table.comment} 服务实现类,注意查看ServiceImpl已实现功能，不要重复coding！
+ * </p>
+  * 此代码由代码生成器自动生成，目前生成了（controller、entity、mapper、service、serviceImpl）
+  * 生成器路径：/onlinehandle-gae-serviceimpl/src/test/java/com/cmos/gae/MysqlGenerator.java
+ * @author ${author}
+ * @since ${date}
+ */
+@Service
+#if(${kotlin})
+open class ${table.serviceImplName} : ${superServiceImplClass}<${table.mapperName}, ${entity}>(), ${table.serviceName} {
+
+}
+#else
+public class ${table.serviceImplName} extends BaseService<${table.entityName}, Long> implements ${table.serviceName} {
+
+}
+#end

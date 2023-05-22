@@ -1,0 +1,939 @@
+[INFO ] [2023-05-19 19:53:35] T:[] S:[] U:[] [background-preinit] ==> HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] [2023-05-19 19:53:35] T:[] S:[] U:[] [main] ==> Starting WebAdminApplication using Java 1.8.0_241 on LAPTOP-EP7QEOQR with PID 22584 (D:\work\other\chargeSystem\charge-webadmin\target\classes started by yinmf in D:\work\other\chargeSystem\charge-webadmin)
+[INFO ] [2023-05-19 19:53:35] T:[] S:[] U:[] [main] ==> The following 1 profile is active: "dev"
+[INFO ] [2023-05-19 19:53:43] T:[] S:[] U:[] [main] ==> Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] [2023-05-19 19:53:43] T:[] S:[] U:[] [main] ==> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] [2023-05-19 19:53:44] T:[] S:[] U:[] [main] ==> Finished Spring Data repository scanning in 81 ms. Found 0 Redis repository interfaces.
+[INFO ] [2023-05-19 19:53:45] T:[] S:[] U:[] [main] ==> Bean 'commonWebMvcConfig' of type [com.course.app.common.core.config.CommonWebMvcConfig$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [2023-05-19 19:53:52] T:[] S:[] U:[] [main] ==> Tomcat initialized with port(s): 18082 (http)
+[INFO ] [2023-05-19 19:53:52] T:[] S:[] U:[] [main] ==> Initializing ProtocolHandler ["http-nio-18082"]
+[INFO ] [2023-05-19 19:53:52] T:[] S:[] U:[] [main] ==> Starting service [Tomcat]
+[INFO ] [2023-05-19 19:53:52] T:[] S:[] U:[] [main] ==> Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] [2023-05-19 19:53:52] T:[] S:[] U:[] [main] ==> Initializing Spring embedded WebApplicationContext
+[INFO ] [2023-05-19 19:53:52] T:[] S:[] U:[] [main] ==> Root WebApplicationContext: initialization completed in 16712 ms
+[INFO ] [2023-05-19 19:53:53] T:[] S:[] U:[] [main] ==> Filter characterEncodingFilter was not registered (possibly already registered?)
+[ERROR] [2023-05-19 19:53:53] T:[] S:[] U:[] [main] ==> For security constraints with URL pattern [/*] only the HTTP methods [TRACE HEAD DELETE SEARCH PROPFIND COPY PUT PATCH] are covered. All other methods are uncovered.
+[INFO ] [2023-05-19 19:53:55] T:[] S:[] U:[] [main] ==> Redisson 3.15.4
+[INFO ] [2023-05-19 19:54:03] T:[] S:[] U:[] [redisson-netty-2-9] ==> 1 connections initialized for /111.173.89.247:6379
+[INFO ] [2023-05-19 19:54:03] T:[] S:[] U:[] [redisson-netty-2-11] ==> 5 connections initialized for /111.173.89.247:6379
+[INFO ] [2023-05-19 19:54:06] T:[] S:[] U:[] [main] ==> {dataSource-1} inited
+[INFO ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> {dataSource-2} inited
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\CollegeScore.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\DormFee.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\DormFeeFreeDetail.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\PayFeeDetail.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\PrePaymentFeeDetail.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\RefundFeeDetail.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SchoolFee.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SchoolFeeFreeDetail.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SysDataPerm.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SysDept.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SysDorm.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SysMenu.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SysPermCode.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SysQuest.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SysRole.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SysStudent.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\charge-webadmin\target\classes\com\course\app\webadmin\upms\model\SysUser.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowCategory.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowEntry.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowEntryVariable.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowMessage.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowTaskComment.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:07] T:[] S:[] U:[] [main] ==> Cannot load the 'file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\model\FlowWorkOrder.class]'. Cause by java.lang.ExceptionInInitializerError
+[WARN ] [2023-05-19 19:54:08] T:[] S:[] U:[] [main] ==> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowCategoryController': Unsatisfied dependency expressed through field 'flowCategoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowCategoryService': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowCategoryMapper' defined in file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\dao\FlowCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.CollegeScore
+[INFO ] [2023-05-19 19:54:08] T:[] S:[] U:[] [main] ==> {dataSource-2} closing ...
+[INFO ] [2023-05-19 19:54:08] T:[] S:[] U:[] [main] ==> {dataSource-2} closed
+[INFO ] [2023-05-19 19:54:08] T:[] S:[] U:[] [main] ==> {dataSource-1} closing ...
+[INFO ] [2023-05-19 19:54:08] T:[] S:[] U:[] [main] ==> {dataSource-1} closed
+[INFO ] [2023-05-19 19:54:08] T:[] S:[] U:[] [main] ==> Stopping service [Tomcat]
+[INFO ] [2023-05-19 19:54:08] T:[] S:[] U:[] [main] ==> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] [2023-05-19 19:54:08] T:[] S:[] U:[] [main] ==> Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowCategoryController': Unsatisfied dependency expressed through field 'flowCategoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowCategoryService': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowCategoryMapper' defined in file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\dao\FlowCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.CollegeScore
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:41002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:42008)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:448)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.course.app.webadmin.WebAdminApplication.main(WebAdminApplication.java:20)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowCategoryService': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowCategoryMapper' defined in file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\dao\FlowCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.CollegeScore
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flowCategoryMapper' defined in file [D:\work\other\chargeSystem\common\common-flow\target\classes\com\course\app\common\flow\dao\FlowCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.CollegeScore
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 36 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.CollegeScore
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.CollegeScore
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 60 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.course.app.webadmin.upms.model.CollegeScore
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:574)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:445)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:609)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 61 common frames omitted
+[INFO ] [2023-05-19 20:01:21] T:[] S:[] U:[] [background-preinit] ==> HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] [2023-05-19 20:01:21] T:[] S:[] U:[] [main] ==> Starting WebAdminApplication using Java 1.8.0_241 on LAPTOP-EP7QEOQR with PID 29040 (D:\work\other\chargeSystem\charge-webadmin\target\classes started by yinmf in D:\work\other\chargeSystem\charge-webadmin)
+[INFO ] [2023-05-19 20:01:21] T:[] S:[] U:[] [main] ==> The following 1 profile is active: "dev"
+[INFO ] [2023-05-19 20:01:30] T:[] S:[] U:[] [main] ==> Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] [2023-05-19 20:01:30] T:[] S:[] U:[] [main] ==> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] [2023-05-19 20:01:30] T:[] S:[] U:[] [main] ==> Finished Spring Data repository scanning in 117 ms. Found 0 Redis repository interfaces.
+[INFO ] [2023-05-19 20:01:33] T:[] S:[] U:[] [main] ==> Bean 'commonWebMvcConfig' of type [com.course.app.common.core.config.CommonWebMvcConfig$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [2023-05-19 20:01:41] T:[] S:[] U:[] [main] ==> Tomcat initialized with port(s): 18082 (http)
+[INFO ] [2023-05-19 20:01:41] T:[] S:[] U:[] [main] ==> Initializing ProtocolHandler ["http-nio-18082"]
+[INFO ] [2023-05-19 20:01:41] T:[] S:[] U:[] [main] ==> Starting service [Tomcat]
+[INFO ] [2023-05-19 20:01:41] T:[] S:[] U:[] [main] ==> Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] [2023-05-19 20:01:42] T:[] S:[] U:[] [main] ==> Initializing Spring embedded WebApplicationContext
+[INFO ] [2023-05-19 20:01:42] T:[] S:[] U:[] [main] ==> Root WebApplicationContext: initialization completed in 20666 ms
+[INFO ] [2023-05-19 20:01:43] T:[] S:[] U:[] [main] ==> Filter characterEncodingFilter was not registered (possibly already registered?)
+[ERROR] [2023-05-19 20:01:43] T:[] S:[] U:[] [main] ==> For security constraints with URL pattern [/*] only the HTTP methods [TRACE HEAD DELETE SEARCH PROPFIND COPY PUT PATCH] are covered. All other methods are uncovered.
+[INFO ] [2023-05-19 20:01:45] T:[] S:[] U:[] [main] ==> Redisson 3.15.4
+[INFO ] [2023-05-19 20:01:54] T:[] S:[] U:[] [redisson-netty-2-8] ==> 1 connections initialized for /111.173.89.247:6379
+[INFO ] [2023-05-19 20:01:54] T:[] S:[] U:[] [redisson-netty-2-13] ==> 5 connections initialized for /111.173.89.247:6379
+[INFO ] [2023-05-19 20:01:57] T:[] S:[] U:[] [main] ==> {dataSource-1} inited
+[INFO ] [2023-05-19 20:01:57] T:[] S:[] U:[] [main] ==> {dataSource-2} inited
+[WARN ] [2023-05-19 20:01:59] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermDept".
+[WARN ] [2023-05-19 20:01:59] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:02:00] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermMenu".
+[WARN ] [2023-05-19 20:02:00] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:02:00] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermUser".
+[WARN ] [2023-05-19 20:02:00] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermUser ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:02:00] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDeptRelation".
+[WARN ] [2023-05-19 20:02:00] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDeptRelation ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:02:00] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysMenuPermCode".
+[WARN ] [2023-05-19 20:02:00] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysMenuPermCode ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:02:00] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysPermCodePerm".
+[WARN ] [2023-05-19 20:02:00] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysPermCodePerm ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:02:01] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysRoleMenu".
+[WARN ] [2023-05-19 20:02:01] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysRoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:02:01] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysUserRole".
+[WARN ] [2023-05-19 20:02:01] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysUserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:02:02] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.common.flow.model.FlowTaskExt".
+[WARN ] [2023-05-19 20:02:02] T:[] S:[] U:[] [main] ==> class com.course.app.common.flow.model.FlowTaskExt ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[INFO ] [2023-05-19 20:02:06] T:[] S:[] U:[] [main] ==> No deployment resources were found for autodeployment
+[INFO ] [2023-05-19 20:02:07] T:[] S:[] U:[] [main] ==> No deployment resources were found for autodeployment
+[INFO ] [2023-05-19 20:02:09] T:[] S:[] U:[] [main] ==> Found 2 Engine Configurators in total:
+[INFO ] [2023-05-19 20:02:09] T:[] S:[] U:[] [main] ==> class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+[INFO ] [2023-05-19 20:02:09] T:[] S:[] U:[] [main] ==> class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+[INFO ] [2023-05-19 20:02:09] T:[] S:[] U:[] [main] ==> Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+[INFO ] [2023-05-19 20:02:09] T:[] S:[] U:[] [main] ==> Executing beforeInit() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+[INFO ] [2023-05-19 20:02:15] T:[] S:[] U:[] [main] ==> Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+[INFO ] [2023-05-19 20:02:18] T:[] S:[] U:[] [main] ==> Successfully acquired change log lock
+[INFO ] [2023-05-19 20:02:22] T:[] S:[] U:[] [main] ==> Reading from charge_system.FLW_EV_DATABASECHANGELOG
+[INFO ] [2023-05-19 20:02:23] T:[] S:[] U:[] [main] ==> Successfully released change log lock
+[INFO ] [2023-05-19 20:02:23] T:[] S:[] U:[] [main] ==> Successfully acquired change log lock
+[WARN ] [2023-05-19 20:02:23] T:[] S:[] U:[] [main] ==> Skipping auto-registration
+[INFO ] [2023-05-19 20:02:23] T:[] S:[] U:[] [main] ==> Successfully released change log lock
+[INFO ] [2023-05-19 20:02:23] T:[] S:[] U:[] [main] ==> EventRegistryEngine default created
+[INFO ] [2023-05-19 20:02:23] T:[] S:[] U:[] [main] ==> Executing configure() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+[INFO ] [2023-05-19 20:02:23] T:[] S:[] U:[] [main] ==> IdmEngine default created
+[INFO ] [2023-05-19 20:02:26] T:[] S:[] U:[] [main] ==> ProcessEngine default created
+[INFO ] [2023-05-19 20:02:26] T:[] S:[] U:[] [main] ==> Total of v5 deployments found: 0
+[INFO ] [2023-05-19 20:02:36] T:[] S:[] U:[] [main] ==> 自定义配置项：
+AjCaptchaProperties{type=DEFAULT, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='我的水印', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='2', cacheNumber='1000', timingClear='180', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=360, reqGetMinuteLimit=30, reqCheckMinuteLimit=30, reqVerifyMinuteLimit=60}
+[INFO ] [2023-05-19 20:02:36] T:[] S:[] U:[] [main] ==> 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@401f7f74, ORIGINAL=[Ljava.lang.String;@13d7a74d, PIC_CLICK=[Ljava.lang.String;@7aec5157]
+[INFO ] [2023-05-19 20:02:36] T:[] S:[] U:[] [main] ==> supported-captchaCache-service:[redis, local]
+[INFO ] [2023-05-19 20:02:36] T:[] S:[] U:[] [main] ==> supported-captchaTypes-service:[clickWord, default, blockPuzzle]
+[INFO ] [2023-05-19 20:02:36] T:[] S:[] U:[] [main] ==> --->>>初始化验证码底图<<<---clickWord
+[INFO ] [2023-05-19 20:02:37] T:[] S:[] U:[] [main] ==> --->>>初始化验证码底图<<<---blockPuzzle
+[INFO ] [2023-05-19 20:02:41] T:[] S:[] U:[] [main] ==> Exposing 14 endpoint(s) beneath base path '/actuator'
+[WARN ] [2023-05-19 20:02:45] T:[] S:[] U:[] [main] ==> Cannot find template location(s): [classpath:/template/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[INFO ] [2023-05-19 20:02:46] T:[] S:[] U:[] [main] ==> Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+[INFO ] [2023-05-19 20:02:46] T:[] S:[] U:[] [Thread-27] ==> starting to acquire async jobs due
+[INFO ] [2023-05-19 20:02:46] T:[] S:[] U:[] [Thread-28] ==> starting to acquire async jobs due
+[INFO ] [2023-05-19 20:02:46] T:[] S:[] U:[] [Thread-29] ==> starting to reset expired jobs for engine bpmn
+[INFO ] [2023-05-19 20:02:46] T:[] S:[] U:[] [main] ==> Starting ProtocolHandler ["http-nio-18082"]
+[INFO ] [2023-05-19 20:02:46] T:[] S:[] U:[] [main] ==> Tomcat started on port(s): 18082 (http) with context path ''
+[INFO ] [2023-05-19 20:02:49] T:[] S:[] U:[] [main] ==> Started WebAdminApplication in 90.811 seconds (JVM running for 100.183)
+[ERROR] [2023-05-19 20:03:09] T:[] S:[] U:[] [redisson-netty-2-4] ==> Exception occured. Channel: [id: 0x039797b9, L:/192.168.1.6:62677 - R:/111.173.89.247:6379]
+java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ] [2023-05-19 20:03:47] T:[] S:[] U:[] [flowable-bpmn-acquire-async-jobs] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://111.173.89.247:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 60658
+[INFO ] [2023-05-19 20:06:38] T:[] S:[] U:[] [background-preinit] ==> HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] [2023-05-19 20:06:39] T:[] S:[] U:[] [main] ==> Starting WebAdminApplication using Java 1.8.0_241 on LAPTOP-EP7QEOQR with PID 30796 (D:\work\other\chargeSystem\charge-webadmin\target\classes started by yinmf in D:\work\other\chargeSystem\charge-webadmin)
+[INFO ] [2023-05-19 20:06:39] T:[] S:[] U:[] [main] ==> The following 1 profile is active: "dev"
+[INFO ] [2023-05-19 20:06:50] T:[] S:[] U:[] [main] ==> Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] [2023-05-19 20:06:50] T:[] S:[] U:[] [main] ==> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] [2023-05-19 20:06:50] T:[] S:[] U:[] [main] ==> Finished Spring Data repository scanning in 106 ms. Found 0 Redis repository interfaces.
+[INFO ] [2023-05-19 20:06:52] T:[] S:[] U:[] [main] ==> Bean 'commonWebMvcConfig' of type [com.course.app.common.core.config.CommonWebMvcConfig$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [2023-05-19 20:06:59] T:[] S:[] U:[] [main] ==> Tomcat initialized with port(s): 18082 (http)
+[INFO ] [2023-05-19 20:06:59] T:[] S:[] U:[] [main] ==> Initializing ProtocolHandler ["http-nio-18082"]
+[INFO ] [2023-05-19 20:06:59] T:[] S:[] U:[] [main] ==> Starting service [Tomcat]
+[INFO ] [2023-05-19 20:06:59] T:[] S:[] U:[] [main] ==> Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] [2023-05-19 20:06:59] T:[] S:[] U:[] [main] ==> Initializing Spring embedded WebApplicationContext
+[INFO ] [2023-05-19 20:06:59] T:[] S:[] U:[] [main] ==> Root WebApplicationContext: initialization completed in 19231 ms
+[INFO ] [2023-05-19 20:07:00] T:[] S:[] U:[] [main] ==> Filter characterEncodingFilter was not registered (possibly already registered?)
+[ERROR] [2023-05-19 20:07:00] T:[] S:[] U:[] [main] ==> For security constraints with URL pattern [/*] only the HTTP methods [TRACE HEAD DELETE SEARCH PROPFIND COPY PUT PATCH] are covered. All other methods are uncovered.
+[INFO ] [2023-05-19 20:07:01] T:[] S:[] U:[] [main] ==> Redisson 3.15.4
+[INFO ] [2023-05-19 20:07:07] T:[] S:[] U:[] [redisson-netty-2-8] ==> 1 connections initialized for /111.173.89.247:6379
+[INFO ] [2023-05-19 20:07:07] T:[] S:[] U:[] [redisson-netty-2-13] ==> 5 connections initialized for /111.173.89.247:6379
+[INFO ] [2023-05-19 20:07:10] T:[] S:[] U:[] [main] ==> {dataSource-1} inited
+[INFO ] [2023-05-19 20:07:10] T:[] S:[] U:[] [main] ==> {dataSource-2} inited
+[WARN ] [2023-05-19 20:07:12] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermDept".
+[WARN ] [2023-05-19 20:07:12] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:07:12] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermMenu".
+[WARN ] [2023-05-19 20:07:12] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:07:13] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDataPermUser".
+[WARN ] [2023-05-19 20:07:13] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDataPermUser ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:07:13] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysDeptRelation".
+[WARN ] [2023-05-19 20:07:13] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysDeptRelation ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:07:13] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysMenuPermCode".
+[WARN ] [2023-05-19 20:07:13] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysMenuPermCode ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:07:13] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysPermCodePerm".
+[WARN ] [2023-05-19 20:07:13] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysPermCodePerm ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:07:14] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysRoleMenu".
+[WARN ] [2023-05-19 20:07:14] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysRoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:07:14] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.webadmin.upms.model.SysUserRole".
+[WARN ] [2023-05-19 20:07:14] T:[] S:[] U:[] [main] ==> class com.course.app.webadmin.upms.model.SysUserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[WARN ] [2023-05-19 20:07:15] T:[] S:[] U:[] [main] ==> Can not find table primary key in Class: "com.course.app.common.flow.model.FlowTaskExt".
+[WARN ] [2023-05-19 20:07:15] T:[] S:[] U:[] [main] ==> class com.course.app.common.flow.model.FlowTaskExt ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[INFO ] [2023-05-19 20:07:20] T:[] S:[] U:[] [main] ==> No deployment resources were found for autodeployment
+[INFO ] [2023-05-19 20:07:20] T:[] S:[] U:[] [main] ==> No deployment resources were found for autodeployment
+[INFO ] [2023-05-19 20:07:22] T:[] S:[] U:[] [main] ==> Found 2 Engine Configurators in total:
+[INFO ] [2023-05-19 20:07:22] T:[] S:[] U:[] [main] ==> class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+[INFO ] [2023-05-19 20:07:22] T:[] S:[] U:[] [main] ==> class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+[INFO ] [2023-05-19 20:07:22] T:[] S:[] U:[] [main] ==> Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+[INFO ] [2023-05-19 20:07:22] T:[] S:[] U:[] [main] ==> Executing beforeInit() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+[INFO ] [2023-05-19 20:07:27] T:[] S:[] U:[] [main] ==> Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+[INFO ] [2023-05-19 20:07:30] T:[] S:[] U:[] [main] ==> Successfully acquired change log lock
+[INFO ] [2023-05-19 20:07:33] T:[] S:[] U:[] [main] ==> Reading from charge_system.FLW_EV_DATABASECHANGELOG
+[INFO ] [2023-05-19 20:07:33] T:[] S:[] U:[] [main] ==> Successfully released change log lock
+[INFO ] [2023-05-19 20:07:34] T:[] S:[] U:[] [main] ==> Successfully acquired change log lock
+[WARN ] [2023-05-19 20:07:34] T:[] S:[] U:[] [main] ==> Skipping auto-registration
+[INFO ] [2023-05-19 20:07:34] T:[] S:[] U:[] [main] ==> Successfully released change log lock
+[INFO ] [2023-05-19 20:07:34] T:[] S:[] U:[] [main] ==> EventRegistryEngine default created
+[INFO ] [2023-05-19 20:07:34] T:[] S:[] U:[] [main] ==> Executing configure() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+[INFO ] [2023-05-19 20:07:34] T:[] S:[] U:[] [main] ==> IdmEngine default created
+[INFO ] [2023-05-19 20:07:38] T:[] S:[] U:[] [main] ==> ProcessEngine default created
+[INFO ] [2023-05-19 20:07:38] T:[] S:[] U:[] [main] ==> Total of v5 deployments found: 0
+[INFO ] [2023-05-19 20:07:45] T:[] S:[] U:[] [main] ==> 自定义配置项：
+AjCaptchaProperties{type=DEFAULT, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='我的水印', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='2', cacheNumber='1000', timingClear='180', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=360, reqGetMinuteLimit=30, reqCheckMinuteLimit=30, reqVerifyMinuteLimit=60}
+[INFO ] [2023-05-19 20:07:45] T:[] S:[] U:[] [main] ==> 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@50ffddb4, ORIGINAL=[Ljava.lang.String;@221885c3, PIC_CLICK=[Ljava.lang.String;@4640316]
+[INFO ] [2023-05-19 20:07:45] T:[] S:[] U:[] [main] ==> supported-captchaCache-service:[redis, local]
+[INFO ] [2023-05-19 20:07:45] T:[] S:[] U:[] [main] ==> supported-captchaTypes-service:[clickWord, default, blockPuzzle]
+[INFO ] [2023-05-19 20:07:45] T:[] S:[] U:[] [main] ==> --->>>初始化验证码底图<<<---clickWord
+[INFO ] [2023-05-19 20:07:46] T:[] S:[] U:[] [main] ==> --->>>初始化验证码底图<<<---blockPuzzle
+[INFO ] [2023-05-19 20:07:49] T:[] S:[] U:[] [main] ==> Exposing 14 endpoint(s) beneath base path '/actuator'
+[WARN ] [2023-05-19 20:07:52] T:[] S:[] U:[] [main] ==> Cannot find template location(s): [classpath:/template/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[INFO ] [2023-05-19 20:07:52] T:[] S:[] U:[] [main] ==> Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+[INFO ] [2023-05-19 20:07:52] T:[] S:[] U:[] [Thread-27] ==> starting to acquire async jobs due
+[INFO ] [2023-05-19 20:07:52] T:[] S:[] U:[] [Thread-29] ==> starting to reset expired jobs for engine bpmn
+[INFO ] [2023-05-19 20:07:52] T:[] S:[] U:[] [Thread-28] ==> starting to acquire async jobs due
+[INFO ] [2023-05-19 20:07:52] T:[] S:[] U:[] [main] ==> Starting ProtocolHandler ["http-nio-18082"]
+[INFO ] [2023-05-19 20:07:53] T:[] S:[] U:[] [main] ==> Tomcat started on port(s): 18082 (http) with context path ''
+[INFO ] [2023-05-19 20:07:55] T:[] S:[] U:[] [main] ==> Started WebAdminApplication in 82.604 seconds (JVM running for 92.031)
+[INFO ] [2023-05-19 20:08:19] T:[] S:[] U:[] [http-nio-18082-exec-1] ==> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [2023-05-19 20:08:19] T:[] S:[] U:[] [http-nio-18082-exec-1] ==> Initializing Servlet 'dispatcherServlet'
+[INFO ] [2023-05-19 20:08:19] T:[] S:[] U:[] [http-nio-18082-exec-1] ==> Completed initialization in 4 ms
+[INFO ] [2023-05-19 20:08:20] T:[d09629edb2fe444d90ed889b4c05acba] S:[] U:[] [http-nio-18082-exec-1] ==> 开始请求，url=/admin/upms/h5Login/smsCodeSend, reqData={"phoneNum":"18387104246"}
+[INFO ] [2023-05-19 20:08:20] T:[d09629edb2fe444d90ed889b4c05acba] S:[] U:[] [http-nio-18082-exec-1] ==> 短信发送成功！
+[INFO ] [2023-05-19 20:08:20] T:[d09629edb2fe444d90ed889b4c05acba] S:[] U:[] [http-nio-18082-exec-1] ==> smsCodeSend 短信内容为：【验证码】：623280。验证码5分钟内有效，请妥善保管。【曲靖一中沾益清源学校】
+[INFO ] [2023-05-19 20:08:20] T:[d09629edb2fe444d90ed889b4c05acba] S:[] U:[] [http-nio-18082-exec-1] ==> 请求完成, url=/admin/upms/h5Login/smsCodeSend，elapse=325ms, respData={"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[ERROR] [2023-05-19 20:09:13] T:[] S:[] U:[] [flowable-bpmn-acquire-async-jobs] ==> discard connection
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 59,877 milliseconds ago. The last packet sent successfully to the server was 59,931 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+	at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:729)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:287)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:57)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.acquireAndExecuteJobs(AcquireAsyncJobsDueRunnable.java:84)
+	at org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run(AcquireAsyncJobsDueRunnable.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 59,877 milliseconds ago. The last packet sent successfully to the server was 59,931 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:544)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+	... 12 common frames omitted
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(SocketInputStream.java)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+	... 18 common frames omitted
+[ERROR] [2023-05-19 20:09:13] T:[] S:[] U:[] [flowable-bpmn-acquire-async-jobs] ==> exception for engine bpmn during async job acquisition: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 59,877 milliseconds ago. The last packet sent successfully to the server was 59,931 milliseconds ago.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 59,877 milliseconds ago. The last packet sent successfully to the server was 59,931 milliseconds ago.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:57)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.acquireAndExecuteJobs(AcquireAsyncJobsDueRunnable.java:84)
+	at org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run(AcquireAsyncJobsDueRunnable.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 59,877 milliseconds ago. The last packet sent successfully to the server was 59,931 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+	at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:729)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:287)
+	... 10 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 59,877 milliseconds ago. The last packet sent successfully to the server was 59,931 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:544)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+	... 12 common frames omitted
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(SocketInputStream.java)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+	... 18 common frames omitted
+[INFO ] [2023-05-19 20:09:59] T:[75e27183c2ba46f8953c59340f06dc04] S:[] U:[] [http-nio-18082-exec-2] ==> 开始请求，url=/admin/upms/h5Login/smsCodeSend, reqData={"phoneNum":"18387104246"}
+[INFO ] [2023-05-19 20:09:59] T:[75e27183c2ba46f8953c59340f06dc04] S:[] U:[] [http-nio-18082-exec-2] ==> 短信发送成功！
+[INFO ] [2023-05-19 20:09:59] T:[75e27183c2ba46f8953c59340f06dc04] S:[] U:[] [http-nio-18082-exec-2] ==> smsCodeSend 短信内容为：【验证码】：711849。验证码5分钟内有效，请妥善保管。【曲靖一中沾益清源学校】
+[INFO ] [2023-05-19 20:09:59] T:[75e27183c2ba46f8953c59340f06dc04] S:[] U:[] [http-nio-18082-exec-2] ==> 请求完成, url=/admin/upms/h5Login/smsCodeSend，elapse=46ms, respData={"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[WARN ] [2023-05-19 20:12:10] T:[] S:[] U:[] [http-nio-18082-exec-3] ==> No MyBatis mapper was found in '[com.course.app.webadmin.*.dao, com.course.app.common.*.dao]' package. Please check your configuration.
+[INFO ] [2023-05-19 20:12:10] T:[] S:[] U:[] [http-nio-18082-exec-3] ==> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] [2023-05-19 20:12:10] T:[] S:[] U:[] [http-nio-18082-exec-3] ==> Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+[INFO ] [2023-05-19 20:12:11] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> 开始请求，url=/admin/upms/h5Login/login, reqData={"openId":"fdfdsfds432432534","smsCode":"711849","phoneNum":"18387104246","identityCard":"500235201212098790","userName":"张小晓"}
+[INFO ] [2023-05-19 20:12:11] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> ====>smsCode,711849
+[DEBUG] [2023-05-19 20:12:11] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> ==>  Preparing: SELECT student_id,student_no,student_name,sex,identity_card,home_address,domicile_address,grade_school,mse_score,student_status_dist_nm,dorm_id,class_id,poor_flag,dependant,phone_num,pay_type,deleted_flag,political_outlook,status_type,parent_notes,student_status,enrol_time,dropout_time,ost_time,register_type,open_id,create_user_id,create_time,update_user_id,update_time FROM sys_student WHERE deleted_flag=1 AND (student_name = ? AND identity_card = ?)
+[DEBUG] [2023-05-19 20:12:11] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> ==> Parameters: 张小晓(String), 500235201212098790(String)
+[DEBUG] [2023-05-19 20:12:11] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> <==      Total: 1
+[DEBUG] [2023-05-19 20:12:12] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> ==>  Preparing: UPDATE sys_student SET student_no=?, student_name=?, sex=?, identity_card=?, home_address=?, domicile_address=?, grade_school=?, mse_score=?, student_status_dist_nm=?, dependant=?, phone_num=?, register_type=?, open_id=?, create_time=?, update_time=? WHERE student_id=? AND deleted_flag=1
+[DEBUG] [2023-05-19 20:12:12] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> ==> Parameters: Y20237680(String), 张小晓(String), 1(Integer), 500235201212098790(String), 云南省昆明市五华区龙泉街道(String), 云南曲靖(String), 麒麟区第一中学(String), 670(Integer), 麒麟区(String), 哈哈(String), 18387104246(String), 1(Integer), fdfdsfds432432534(String), 2023-05-13 19:53:41.0(Timestamp), 2023-05-13 19:53:41.0(Timestamp), 1657353415975505920(Long)
+[DEBUG] [2023-05-19 20:12:12] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> <==    Updates: 1
+[DEBUG] [2023-05-19 20:12:12] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> ==>  Preparing: SELECT class_id,class_name,class_teacher_id,class_teacher_name,create_user_id,create_time,update_user_id,update_time FROM sys_class WHERE class_id=?
+[DEBUG] [2023-05-19 20:12:12] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> ==> Parameters: null
+[DEBUG] [2023-05-19 20:12:12] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> <==      Total: 0
+[DEBUG] [2023-05-19 20:12:12] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> ==>  Preparing: SELECT dorm_id,build_num,dorm_num,dorm_type,bed_num,fee,is_full,deleted_flag,create_user_id,create_time,update_user_id,update_time FROM sys_dorm WHERE dorm_id=? AND deleted_flag=1
+[DEBUG] [2023-05-19 20:12:12] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> ==> Parameters: null
+[DEBUG] [2023-05-19 20:12:12] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> <==      Total: 0
+[INFO ] [2023-05-19 20:12:14] T:[71ae59fc128b4d53be16ed187843948c] S:[] U:[] [http-nio-18082-exec-3] ==> 请求完成, url=/admin/upms/h5Login/login，elapse=3568ms, respData={"data":{"tokenData":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2ODQ1NzAzMzIsInNlc3Npb25JZCI6IuW8oOWwj-aZk180XzFiODllOTY4M2I5MTRiMzNiMWU5YTEyMjgwNGNjYTZkIiwiQ3JlYXRlZFRpbWUiOjE2ODQ0OTgzMzI2NzJ9.vQCEZHZr5CyTFns8eNoCEQc6pk4hc84rk5dxk4DlW_CwrzibrFBvGQFblW1bngojTGZ45kWBIyWCYs1AhFXV6Q","studentInfo":{"studentId":1657353415975505920,"studentNo":"Y20237680","studentName":"张小晓","sex":1,"identityCard":"500235201212098790","homeAddress":"云南省昆明市五华区龙泉街道","domicileAddress":"云南曲靖","gradeSchool":"麒麟区第一中学","mseScore":670,"studentStatusDistNm":"麒麟区","dependant":"哈哈","phoneNum":"18387104246","deletedFlag":1,"registerType":1,"openId":"fdfdsfds432432534","createTime":1683978821000,"updateTime":1683978821000}},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-19 20:12:23] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> 开始请求，url=/admin/upms/h5Login/login, reqData={"openId":"fdfdsfds432432534","smsCode":"711849","phoneNum":"18387104246","identityCard":"500235201212098790","userName":"张小晓"}
+[INFO ] [2023-05-19 20:12:23] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> ====>smsCode,711849
+[DEBUG] [2023-05-19 20:12:23] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> ==>  Preparing: SELECT student_id,student_no,student_name,sex,identity_card,home_address,domicile_address,grade_school,mse_score,student_status_dist_nm,dorm_id,class_id,poor_flag,dependant,phone_num,pay_type,deleted_flag,political_outlook,status_type,parent_notes,student_status,enrol_time,dropout_time,ost_time,register_type,open_id,create_user_id,create_time,update_user_id,update_time FROM sys_student WHERE deleted_flag=1 AND (student_name = ? AND identity_card = ?)
+[DEBUG] [2023-05-19 20:12:23] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> ==> Parameters: 张小晓(String), 500235201212098790(String)
+[DEBUG] [2023-05-19 20:12:23] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> <==      Total: 1
+[DEBUG] [2023-05-19 20:12:23] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> ==>  Preparing: SELECT class_id,class_name,class_teacher_id,class_teacher_name,create_user_id,create_time,update_user_id,update_time FROM sys_class WHERE class_id=?
+[DEBUG] [2023-05-19 20:12:23] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> ==> Parameters: null
+[DEBUG] [2023-05-19 20:12:24] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> <==      Total: 0
+[DEBUG] [2023-05-19 20:12:24] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> ==>  Preparing: SELECT dorm_id,build_num,dorm_num,dorm_type,bed_num,fee,is_full,deleted_flag,create_user_id,create_time,update_user_id,update_time FROM sys_dorm WHERE dorm_id=? AND deleted_flag=1
+[DEBUG] [2023-05-19 20:12:24] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> ==> Parameters: null
+[DEBUG] [2023-05-19 20:12:24] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> <==      Total: 0
+[INFO ] [2023-05-19 20:12:24] T:[a3d641356a24424d92f9b49b4ece8719] S:[] U:[] [http-nio-18082-exec-4] ==> 请求完成, url=/admin/upms/h5Login/login，elapse=439ms, respData={"data":{"tokenData":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2ODQ1NzAzNDQsInNlc3Npb25JZCI6IuW8oOWwj-aZk180X2Q4MmFmZmQ1ZDdjNjRkNWFhMTMwNjFhZTJiMTYwNDlkIiwiQ3JlYXRlZFRpbWUiOjE2ODQ0OTgzNDQwNjN9.ftVlwR53tIq5OE0EteCPPbSREzk4eiBVqWYRKBdsBeJ2vHKu3ymkdy3GKItPv7qOL2LaS2xs0jXZ3qz-NQQB-Q","studentInfo":{"studentId":1657353415975505920,"studentNo":"Y20237680","studentName":"张小晓","sex":1,"identityCard":"500235201212098790","homeAddress":"云南省昆明市五华区龙泉街道","domicileAddress":"云南曲靖","gradeSchool":"麒麟区第一中学","mseScore":670,"studentStatusDistNm":"麒麟区","dependant":"哈哈","phoneNum":"18387104246","deletedFlag":1,"registerType":1,"openId":"fdfdsfds432432534","createTime":1683978821000,"updateTime":1683978821000}},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-19 20:21:39] T:[e2cc623550a64635b8ac4f81e9764e32] S:[] U:[] [http-nio-18082-exec-5] ==> 开始请求，url=/admin/upms/h5Login/login, reqData={"openId":"fdfdsfds432432534","smsCode":"711849","phoneNum":"18387104246","identityCard":"500235201212098790","userName":"张小晓"}
+[INFO ] [2023-05-19 20:21:39] T:[e2cc623550a64635b8ac4f81e9764e32] S:[] U:[] [http-nio-18082-exec-5] ==> 请求完成, url=/admin/upms/h5Login/login，elapse=51ms, respData={"errorCode":"SMSCODE_EXPIRE","errorMessage":"验证码已失效，请重新获取！","success":false}
+[INFO ] [2023-05-19 20:21:45] T:[dbcc11f334c947caa6da9970535cb650] S:[] U:[] [http-nio-18082-exec-6] ==> 开始请求，url=/admin/upms/h5Login/smsCodeSend, reqData={"phoneNum":"18387104246"}
+[INFO ] [2023-05-19 20:21:45] T:[dbcc11f334c947caa6da9970535cb650] S:[] U:[] [http-nio-18082-exec-6] ==> 短信发送成功！
+[INFO ] [2023-05-19 20:21:45] T:[dbcc11f334c947caa6da9970535cb650] S:[] U:[] [http-nio-18082-exec-6] ==> smsCodeSend 短信内容为：【验证码】：813465。验证码5分钟内有效，请妥善保管。【曲靖一中沾益清源学校】
+[INFO ] [2023-05-19 20:21:45] T:[dbcc11f334c947caa6da9970535cb650] S:[] U:[] [http-nio-18082-exec-6] ==> 请求完成, url=/admin/upms/h5Login/smsCodeSend，elapse=48ms, respData={"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> 开始请求，url=/admin/upms/h5Login/login, reqData={"openId":"fdfdsfds432432534","smsCode":"813465","phoneNum":"18387104246","identityCard":"500235201212098790","userName":"张小晓"}
+[INFO ] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> ====>smsCode,813465
+[DEBUG] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> ==>  Preparing: SELECT student_id,student_no,student_name,sex,identity_card,home_address,domicile_address,grade_school,mse_score,student_status_dist_nm,dorm_id,class_id,poor_flag,dependant,phone_num,pay_type,deleted_flag,political_outlook,status_type,parent_notes,student_status,enrol_time,dropout_time,ost_time,register_type,open_id,create_user_id,create_time,update_user_id,update_time FROM sys_student WHERE deleted_flag=1 AND (student_name = ? AND identity_card = ?)
+[DEBUG] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> ==> Parameters: 张小晓(String), 500235201212098790(String)
+[DEBUG] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> <==      Total: 1
+[DEBUG] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> ==>  Preparing: SELECT class_id,class_name,class_teacher_id,class_teacher_name,create_user_id,create_time,update_user_id,update_time FROM sys_class WHERE class_id=?
+[DEBUG] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> ==> Parameters: 202305192014001(Long)
+[DEBUG] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> <==      Total: 1
+[DEBUG] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> ==>  Preparing: SELECT dorm_id,build_num,dorm_num,dorm_type,bed_num,fee,is_full,deleted_flag,create_user_id,create_time,update_user_id,update_time FROM sys_dorm WHERE dorm_id=? AND deleted_flag=1
+[DEBUG] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> ==> Parameters: 2023051312391001(Long)
+[DEBUG] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> <==      Total: 1
+[INFO ] [2023-05-19 20:21:53] T:[32b71c3179184e2783a05b15869d9bbb] S:[] U:[] [http-nio-18082-exec-7] ==> 请求完成, url=/admin/upms/h5Login/login，elapse=400ms, respData={"data":{"tokenData":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2ODQ1NzA5MTMsInNlc3Npb25JZCI6IuW8oOWwj-aZk180X2E0MTljNDJjM2JjODQwY2RiNTU2MzliNGI4MTcwNjNmIiwiQ3JlYXRlZFRpbWUiOjE2ODQ0OTg5MTMzNDN9.ifi9YZj7ay7TICe8YnqTtDPSWDfVg2hTu2HyPowogXgH2kxuF-c6ky58cfBAGwMwkhRAbLz5t0SCXacR7KW8sg","studentInfo":{"studentId":1657353415975505920,"studentNo":"Y20237680","studentName":"张小晓","sex":1,"identityCard":"500235201212098790","homeAddress":"云南省昆明市五华区龙泉街道","domicileAddress":"云南曲靖","gradeSchool":"麒麟区第一中学","mseScore":670,"studentStatusDistNm":"麒麟区","dormId":2023051312391001,"classId":202305192014001,"poorFlag":0,"dependant":"哈哈","phoneNum":"18387104246","payType":3,"deletedFlag":1,"politicalOutlook":"共青团员","statusType":1,"parentNotes":"哈哈 18656897460","studentStatus":1,"registerType":1,"openId":"fdfdsfds432432534","createUserId":1627840812899373056,"createTime":1683952716000,"updateUserId":1627840812899373056,"updateTime":1683978821000,"className":"初一一班","classTeacherId":1627840812899373056,"classTeacherName":"管理员","buildNum":"A1","dormNum":"101","dormType":"8人间","bedNum":8,"fee":600,"isFull":-1}},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[WARN ] [2023-05-19 20:28:05] T:[] S:[] U:[] [flowable-bpmn-acquire-timer-jobs] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://111.173.89.247:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 121199
+[WARN ] [2023-05-19 20:28:05] T:[] S:[] U:[] [flowable-bpmn-acquire-timer-jobs] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://111.173.89.247:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 1140914
+[WARN ] [2023-05-19 20:28:05] T:[] S:[] U:[] [flowable-bpmn-acquire-timer-jobs] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://111.173.89.247:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 1079793
+[WARN ] [2023-05-19 20:31:07] T:[] S:[] U:[] [flowable-bpmn-acquire-async-jobs] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://111.173.89.247:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 181357
+[WARN ] [2023-05-19 20:35:08] T:[] S:[] U:[] [http-nio-18082-exec-8] ==> No MyBatis mapper was found in '[com.course.app.webadmin.*.dao, com.course.app.common.*.dao]' package. Please check your configuration.
+[INFO ] [2023-05-19 20:35:08] T:[] S:[] U:[] [http-nio-18082-exec-8] ==> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] [2023-05-19 20:35:08] T:[] S:[] U:[] [http-nio-18082-exec-8] ==> Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+[INFO ] [2023-05-19 20:35:11] T:[7e586c36417e4354b7bae99f58dd10c6] S:[] U:[] [http-nio-18082-exec-8] ==> 开始请求，url=/admin/upms/h5Login/login, reqData={"openId":"fdfdsfds432432534","smsCode":"813465","phoneNum":"18387104246","identityCard":"500235201212098790","userName":"张小晓"}
+[INFO ] [2023-05-19 20:35:11] T:[7e586c36417e4354b7bae99f58dd10c6] S:[] U:[] [http-nio-18082-exec-8] ==> 请求完成, url=/admin/upms/h5Login/login，elapse=110ms, respData={"errorCode":"SMSCODE_EXPIRE","errorMessage":"验证码已失效，请重新获取！","success":false}
+[INFO ] [2023-05-19 20:35:16] T:[b0e53492c2e448309030a5705ac698ba] S:[] U:[] [http-nio-18082-exec-9] ==> 开始请求，url=/admin/upms/h5Login/smsCodeSend, reqData={"phoneNum":"18387104246"}
+[INFO ] [2023-05-19 20:35:16] T:[b0e53492c2e448309030a5705ac698ba] S:[] U:[] [http-nio-18082-exec-9] ==> 短信发送成功！
+[INFO ] [2023-05-19 20:35:16] T:[b0e53492c2e448309030a5705ac698ba] S:[] U:[] [http-nio-18082-exec-9] ==> smsCodeSend 短信内容为：【验证码】：933462。验证码5分钟内有效，请妥善保管。【曲靖一中沾益清源学校】
+[INFO ] [2023-05-19 20:35:16] T:[b0e53492c2e448309030a5705ac698ba] S:[] U:[] [http-nio-18082-exec-9] ==> 请求完成, url=/admin/upms/h5Login/smsCodeSend，elapse=61ms, respData={"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-19 20:35:28] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> 开始请求，url=/admin/upms/h5Login/login, reqData={"openId":"fdfdsfds432432534","smsCode":"933462","phoneNum":"18387104246","identityCard":"500235201212098790","userName":"张小晓"}
+[INFO ] [2023-05-19 20:35:28] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> ====>smsCode,933462
+[DEBUG] [2023-05-19 20:35:28] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> ==>  Preparing: SELECT student_id,student_no,student_name,sex,identity_card,home_address,domicile_address,grade_school,mse_score,student_status_dist_nm,dorm_id,class_id,poor_flag,dependant,phone_num,pay_type,deleted_flag,political_outlook,status_type,parent_notes,student_status,enrol_time,dropout_time,ost_time,register_type,open_id,create_user_id,create_time,update_user_id,update_time FROM sys_student WHERE deleted_flag=1 AND (student_name = ? AND identity_card = ?)
+[DEBUG] [2023-05-19 20:35:28] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> ==> Parameters: 张小晓(String), 500235201212098790(String)
+[DEBUG] [2023-05-19 20:35:28] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> <==      Total: 1
+[DEBUG] [2023-05-19 20:35:28] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> ==>  Preparing: SELECT class_id,class_name,class_teacher_id,class_teacher_name,create_user_id,create_time,update_user_id,update_time FROM sys_class WHERE class_id=?
+[DEBUG] [2023-05-19 20:35:28] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> ==> Parameters: 202305192014001(Long)
+[DEBUG] [2023-05-19 20:35:28] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> <==      Total: 1
+[DEBUG] [2023-05-19 20:35:28] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> ==>  Preparing: SELECT dorm_id,build_num,dorm_num,dorm_type,bed_num,fee,is_full,deleted_flag,create_user_id,create_time,update_user_id,update_time FROM sys_dorm WHERE dorm_id=? AND deleted_flag=1
+[DEBUG] [2023-05-19 20:35:28] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> ==> Parameters: 2023051312391001(Long)
+[DEBUG] [2023-05-19 20:35:29] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> <==      Total: 1
+[INFO ] [2023-05-19 20:35:29] T:[7da5ae2c8df14641b27fff103e68b9eb] S:[] U:[] [http-nio-18082-exec-10] ==> 请求完成, url=/admin/upms/h5Login/login，elapse=705ms, respData={"data":{"tokenData":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2ODQ1NzE3MjksInNlc3Npb25JZCI6IuW8oOWwj-aZk180XzUwNmFlYWQyZTNiYTQ0ODNhMmM2OGQwNWMxOWQ0YTljIiwiQ3JlYXRlZFRpbWUiOjE2ODQ0OTk3MjkwNjZ9._WAV5GpLJtf1SA8I_fFBcSlq8CK_gQFCLZw18jm_E81qiVRGc5uXvHTR6RLEgiCW7w5ce7ERQzkHSoSFOb8l5w","studentInfo":{"studentId":1657353415975505920,"studentNo":"Y20237680","studentName":"张小晓","sex":"男","identityCard":"500235201212098790","homeAddress":"云南省昆明市五华区龙泉街道","domicileAddress":"云南曲靖","gradeSchool":"麒麟区第一中学","studentStatusDistNm":"麒麟区","className":"初一一班","classTeacherName":"管理员","buildNum":"A1","dormNum":"101","dormType":"8人间"}},"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[ERROR] [2023-05-19 20:37:13] T:[] S:[] U:[] [redisson-timer-4-1] ==> Unable to send PING command over channel: [id: 0x3ce71de6, L:/192.168.1.6:54655 - R:/111.173.89.247:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://111.173.89.247:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] [2023-05-19 20:39:12] T:[edba1d7567434f20917a5d48a845c088] S:[] U:[] [http-nio-18082-exec-1] ==> 开始请求，url=/admin/upms/h5Login/register, reqData={"sysStudentDto":{"dependant":"刘王","domicileAddress":"云南曲靖","gradeSchool":"曲靖市第一中学","homeAddress":"云南省曲靖市沥青去","identityCard":"53023520121209870X","mseScore":740,"phoneNum":"18387104246","sex":2,"studentName":"张三","studentNo":"Y20237681","studentStatusDistNm":"麒麟区"}}
+[DEBUG] [2023-05-19 20:39:13] T:[edba1d7567434f20917a5d48a845c088] S:[] U:[] [http-nio-18082-exec-1] ==> ==>  Preparing: INSERT INTO sys_student ( student_id, student_no, student_name, sex, identity_card, home_address, domicile_address, grade_school, mse_score, student_status_dist_nm, dependant, phone_num, register_type, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+[DEBUG] [2023-05-19 20:39:13] T:[edba1d7567434f20917a5d48a845c088] S:[] U:[] [http-nio-18082-exec-1] ==> ==> Parameters: 1659539201588203520(Long), Y20237681(String), 张三(String), 2(Integer), 53023520121209870X(String), 云南省曲靖市沥青去(String), 云南曲靖(String), 曲靖市第一中学(String), 740(Integer), 麒麟区(String), 刘王(String), 18387104246(String), 1(Integer), 2023-05-19 20:39:13.064(Timestamp), 2023-05-19 20:39:13.064(Timestamp)
+[DEBUG] [2023-05-19 20:39:13] T:[edba1d7567434f20917a5d48a845c088] S:[] U:[] [http-nio-18082-exec-1] ==> <==    Updates: 1
+[INFO ] [2023-05-19 20:39:13] T:[edba1d7567434f20917a5d48a845c088] S:[] U:[] [http-nio-18082-exec-1] ==> 请求完成, url=/admin/upms/h5Login/register，elapse=1079ms, respData={"data":1659539201588203520,"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[WARN ] [2023-05-19 20:40:15] T:[] S:[] U:[] [flowable-bpmn-acquire-timer-jobs] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://111.173.89.247:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 547165
+[ERROR] [2023-05-19 20:40:26] T:[] S:[] U:[] [http-nio-18082-exec-3] ==> Token Expired
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-05-16T18:57:02Z. Current time: 2023-05-19T20:40:26Z, a difference of 265404184 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.course.app.common.core.util.JwtUtil.parseToken(JwtUtil.java:74)
+	at com.course.app.webadmin.interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:79)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:97)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] [2023-05-19 20:40:45] T:[d1f1394f904e4b2fb46ed2207e4f43e7] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-4] ==> 开始请求，url=/admin/upms/h5Login/listActInfo, reqData={"phoneNum":"18387104246"}
+[DEBUG] [2023-05-19 20:40:46] T:[d1f1394f904e4b2fb46ed2207e4f43e7] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-4] ==> ==>  Preparing: select t.*,sc.class_name,sd.bed_num,sd.build_num,sd.dorm_num,sd.dorm_type from sys_student t left join sys_class sc on t.class_id = sc.class_id left join sys_dorm sd on t.dorm_id = sd.dorm_id where 1=1 and t.phone_num = ? and t.deleted_flag = ?
+[DEBUG] [2023-05-19 20:40:46] T:[d1f1394f904e4b2fb46ed2207e4f43e7] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-4] ==> ==> Parameters: 18387104246(String), 1(Integer)
+[DEBUG] [2023-05-19 20:40:46] T:[d1f1394f904e4b2fb46ed2207e4f43e7] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-4] ==> <==      Total: 1
+[INFO ] [2023-05-19 20:40:46] T:[d1f1394f904e4b2fb46ed2207e4f43e7] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-4] ==> 请求完成, url=/admin/upms/h5Login/listActInfo，elapse=134ms, respData={"data":[{"buildNum":"A1","createUserId":1627840812899373056,"statusType":1,"openId":"fdfdsfds432432534","poorFlag":0,"phoneNum":"18387104246","className":"初一一班","registerType":1,"studentId":1657353415975505920,"classId":202305192014001,"domicileAddress":"云南曲靖","payType":3,"studentStatusDistNm":"麒麟区","dormType":"8人间","dependant":"哈哈","studentStatus":1,"politicalOutlook":"共青团员","gradeSchool":"麒麟区第一中学","homeAddress":"云南省昆明市五华区龙泉街道","updateUserId":1627840812899373056,"parentNotes":"哈哈 18656897460","sex":1,"updateTime":1683978821000,"identityCard":"500235201212098790","dormNum":"101","createTime":1683978821000,"mseScore":670,"deletedFlag":1,"studentName":"张小晓","dormId":2023051312391001,"studentNo":"Y20237680","bedNum":8}],"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[WARN ] [2023-05-19 20:43:17] T:[] S:[] U:[] [flowable-bpmn-acquire-async-jobs] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://111.173.89.247:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 181417
+[WARN ] [2023-05-19 20:44:52] T:[] S:[] U:[] [flowable-bpmn-acquire-timer-jobs] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://111.173.89.247:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 95093
+[ERROR] [2023-05-19 20:45:08] T:[] S:[] U:[] [flowable-bpmn-acquire-async-jobs] ==> discard connection
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 25,942 milliseconds ago. The last packet sent successfully to the server was 25,993 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+	at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:729)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:287)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:57)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.acquireAndExecuteJobs(AcquireAsyncJobsDueRunnable.java:84)
+	at org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run(AcquireAsyncJobsDueRunnable.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 25,942 milliseconds ago. The last packet sent successfully to the server was 25,993 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:544)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+	... 12 common frames omitted
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(SocketInputStream.java)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+	... 18 common frames omitted
+[ERROR] [2023-05-19 20:45:08] T:[] S:[] U:[] [flowable-bpmn-acquire-async-jobs] ==> exception for engine bpmn during async job acquisition: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 25,942 milliseconds ago. The last packet sent successfully to the server was 25,993 milliseconds ago.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 25,942 milliseconds ago. The last packet sent successfully to the server was 25,993 milliseconds ago.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:57)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.acquireAndExecuteJobs(AcquireAsyncJobsDueRunnable.java:84)
+	at org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run(AcquireAsyncJobsDueRunnable.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 25,942 milliseconds ago. The last packet sent successfully to the server was 25,993 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+	at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:729)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:287)
+	... 10 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 25,942 milliseconds ago. The last packet sent successfully to the server was 25,993 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:544)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+	... 12 common frames omitted
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(SocketInputStream.java)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+	... 18 common frames omitted
+[WARN ] [2023-05-19 20:49:44] T:[] S:[] U:[] [http-nio-18082-exec-5] ==> No MyBatis mapper was found in '[com.course.app.webadmin.*.dao, com.course.app.common.*.dao]' package. Please check your configuration.
+[INFO ] [2023-05-19 20:49:44] T:[] S:[] U:[] [http-nio-18082-exec-5] ==> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] [2023-05-19 20:49:44] T:[] S:[] U:[] [http-nio-18082-exec-5] ==> Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+[INFO ] [2023-05-19 20:49:44] T:[bc74fc1a97094daaa0155ef34ff0bca5] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-5] ==> 开始请求，url=/admin/upms/h5Login/listActInfo, reqData={"phoneNum":"18387104246"}
+[DEBUG] [2023-05-19 20:49:44] T:[bc74fc1a97094daaa0155ef34ff0bca5] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-5] ==> ==>  Preparing: SELECT student_id,student_no,student_name,sex,identity_card,home_address,domicile_address,grade_school,mse_score,student_status_dist_nm,dorm_id,class_id,poor_flag,dependant,phone_num,pay_type,deleted_flag,political_outlook,status_type,parent_notes,student_status,enrol_time,dropout_time,ost_time,register_type,open_id,create_user_id,create_time,update_user_id,update_time FROM sys_student WHERE deleted_flag=1 AND (phone_num = ? AND deleted_flag = ?)
+[DEBUG] [2023-05-19 20:49:44] T:[bc74fc1a97094daaa0155ef34ff0bca5] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-5] ==> ==> Parameters: 18387104246(String), 1(Integer)
+[DEBUG] [2023-05-19 20:49:44] T:[bc74fc1a97094daaa0155ef34ff0bca5] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-5] ==> <==      Total: 1
+[INFO ] [2023-05-19 20:49:44] T:[bc74fc1a97094daaa0155ef34ff0bca5] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-5] ==> 请求完成, url=/admin/upms/h5Login/listActInfo，elapse=151ms, respData={"data":[{"studentId":1657353415975505920,"studentNo":"Y20237680","studentName":"张小晓","sex":"男","phoneNum":"18387104246","identityCard":"500235201212098790"}],"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[INFO ] [2023-05-19 20:50:19] T:[fb984513909e4ba6872d44ecdaa602a3] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-6] ==> 开始请求，url=/admin/upms/h5Login/listActInfo, reqData={"phoneNum":"18387104246"}
+[DEBUG] [2023-05-19 20:50:19] T:[fb984513909e4ba6872d44ecdaa602a3] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-6] ==> ==>  Preparing: SELECT student_id,student_no,student_name,sex,identity_card,home_address,domicile_address,grade_school,mse_score,student_status_dist_nm,dorm_id,class_id,poor_flag,dependant,phone_num,pay_type,deleted_flag,political_outlook,status_type,parent_notes,student_status,enrol_time,dropout_time,ost_time,register_type,open_id,create_user_id,create_time,update_user_id,update_time FROM sys_student WHERE deleted_flag=1 AND (phone_num = ? AND deleted_flag = ?)
+[DEBUG] [2023-05-19 20:50:19] T:[fb984513909e4ba6872d44ecdaa602a3] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-6] ==> ==> Parameters: 18387104246(String), 1(Integer)
+[DEBUG] [2023-05-19 20:50:19] T:[fb984513909e4ba6872d44ecdaa602a3] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-6] ==> <==      Total: 2
+[INFO ] [2023-05-19 20:50:19] T:[fb984513909e4ba6872d44ecdaa602a3] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-6] ==> 请求完成, url=/admin/upms/h5Login/listActInfo，elapse=77ms, respData={"data":[{"studentId":1657353415975505920,"studentNo":"Y20237680","studentName":"张小晓","sex":"男","phoneNum":"18387104246","identityCard":"500235201212098790"},{"studentId":1659539201588203520,"studentNo":"Y20237681","studentName":"张三","sex":"女","phoneNum":"18387104246","identityCard":"53023520121209870X"}],"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}
+[WARN ] [2023-05-19 20:50:23] T:[] S:[] U:[] [flowable-bpmn-acquire-timer-jobs] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://111.173.89.247:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 304244
+[WARN ] [2023-05-19 20:50:23] T:[] S:[] U:[] [flowable-bpmn-acquire-timer-jobs] ==> discard long time none received connection. , jdbcUrl : jdbc:mysql://111.173.89.247:3306/charge_system?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai, version : 1.2.5, lastPacketReceivedIdleMillis : 314004
+[ERROR] [2023-05-19 20:51:19] T:[] S:[] U:[] [http-nio-18082-exec-8] ==> Token Expired
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-05-18T19:08:36Z. Current time: 2023-05-19T20:51:19Z, a difference of 92563399 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.course.app.common.core.util.JwtUtil.parseToken(JwtUtil.java:74)
+	at com.course.app.webadmin.interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:79)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:97)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2023-05-19 20:51:22] T:[] S:[] U:[] [http-nio-18082-exec-9] ==> Token Expired
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-05-18T19:08:36Z. Current time: 2023-05-19T20:51:22Z, a difference of 92566270 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.course.app.common.core.util.JwtUtil.parseToken(JwtUtil.java:74)
+	at com.course.app.webadmin.interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:79)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:97)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] [2023-05-19 20:51:37] T:[dc376c1b18784373a75bb4d8f0a72eab] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-10] ==> 开始请求，url=/admin/upms/pmmsMpng/singleStrokePay, reqData={"feeId":"1657353415975505920"}
+[DEBUG] [2023-05-19 20:51:37] T:[dc376c1b18784373a75bb4d8f0a72eab] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-10] ==> ==>  Preparing: SELECT fee_id,student_id,fee_amount,fee_final_time,fee_type,fee_attr_year,fee_status,create_time FROM student_fee_detail WHERE fee_id=?
+[DEBUG] [2023-05-19 20:51:37] T:[dc376c1b18784373a75bb4d8f0a72eab] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-10] ==> ==> Parameters: 1657353415975505920(String)
+[DEBUG] [2023-05-19 20:51:37] T:[dc376c1b18784373a75bb4d8f0a72eab] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-10] ==> <==      Total: 0
+[INFO ] [2023-05-19 20:51:37] T:[dc376c1b18784373a75bb4d8f0a72eab] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-10] ==> 请求完成, url=/admin/upms/pmmsMpng/singleStrokePay，elapse=117ms, respData={"errorCode":"FEE_NOT_EXIST","errorMessage":"该费用不存在，请核对！","success":false}
+[ERROR] [2023-05-19 20:54:14] T:[] S:[] U:[] [http-nio-18082-exec-1] ==> Token Expired
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-05-18T19:08:36Z. Current time: 2023-05-19T20:54:14Z, a difference of 92738141 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.course.app.common.core.util.JwtUtil.parseToken(JwtUtil.java:74)
+	at com.course.app.webadmin.interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:79)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:97)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] [2023-05-19 20:54:26] T:[2bc81bb140c34c53b0b39002ac111f03] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-2] ==> 开始请求，url=/admin/upms/h5Login/queryPendingPayRecords, reqData={"studentId":"1657353415975505920"}
+[DEBUG] [2023-05-19 20:54:26] T:[2bc81bb140c34c53b0b39002ac111f03] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-2] ==> ==>  Preparing: SELECT student_id,student_no,student_name,sex,identity_card,home_address,domicile_address,grade_school,mse_score,student_status_dist_nm,dorm_id,class_id,poor_flag,dependant,phone_num,pay_type,deleted_flag,political_outlook,status_type,parent_notes,student_status,enrol_time,dropout_time,ost_time,register_type,open_id,create_user_id,create_time,update_user_id,update_time FROM sys_student WHERE student_id=? AND deleted_flag=1
+[DEBUG] [2023-05-19 20:54:26] T:[2bc81bb140c34c53b0b39002ac111f03] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-2] ==> ==> Parameters: 1657353415975505920(String)
+[DEBUG] [2023-05-19 20:54:26] T:[2bc81bb140c34c53b0b39002ac111f03] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-2] ==> <==      Total: 1
+[DEBUG] [2023-05-19 20:54:27] T:[2bc81bb140c34c53b0b39002ac111f03] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-2] ==> ==>  Preparing: SELECT fee_id,student_id,fee_amount,fee_final_time,fee_type,fee_attr_year,fee_status,create_time FROM student_fee_detail WHERE (student_id = ? AND fee_status = ?) ORDER BY create_time DESC
+[DEBUG] [2023-05-19 20:54:27] T:[2bc81bb140c34c53b0b39002ac111f03] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-2] ==> ==> Parameters: 1657353415975505920(String), 0(Integer)
+[DEBUG] [2023-05-19 20:54:27] T:[2bc81bb140c34c53b0b39002ac111f03] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-2] ==> <==      Total: 1
+[INFO ] [2023-05-19 20:54:27] T:[2bc81bb140c34c53b0b39002ac111f03] S:[张小晓_4_506aead2e3ba4483a2c68d05c19d4a9c] U:[1657353415975505920] [http-nio-18082-exec-2] ==> 请求完成, url=/admin/upms/h5Login/queryPendingPayRecords，elapse=1211ms, respData={"data":[{"createTime":"2023-05-19","feeAmount":"5000.00","feeAttrYear":2023,"feeFinalTime":"2023-05-19","feeId":1657353415975504326,"feeStatus":0,"feeType":"学费","studentId":1657353415975505920}],"errorCode":"NO-ERROR","errorMessage":"NO-MESSAGE","success":true}

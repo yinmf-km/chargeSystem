@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.app.webadmin.upms.dao.PayFeeDetailMapper">
+    <resultMap id="BaseResultMap" type="com.course.app.webadmin.upms.model.PayFeeDetail">
+        <id column="pay_mer_tran_no" jdbcType="BIGINT" property="payMerTranNo"/>
+        <result column="student_id" jdbcType="BIGINT" property="studentId"/>
+        <result column="phone_num" jdbcType="VARCHAR" property="phoneNum"/>
+        <result column="pay_acct" jdbcType="VARCHAR" property="payAcct"/>
+        <result column="trade_amount" jdbcType="VARCHAR" property="tradeAmount"/>
+        <result column="mer_ptc_id" jdbcType="VARCHAR" property="merPtcId"/>
+        <result column="trans_time" jdbcType="TIMESTAMP" property="transTime"/>
+        <result column="tran_scene" jdbcType="VARCHAR" property="tranScene"/>
+        <result column="currency" jdbcType="VARCHAR" property="currency"/>
+        <result column="buyer_pay_amount" jdbcType="VARCHAR" property="buyerPayAmount"/>
+        <result column="total_amount" jdbcType="VARCHAR" property="totalAmount"/>
+        <result column="refunded_amt" jdbcType="VARCHAR" property="refundedAmt"/>
+        <result column="tran_content" jdbcType="VARCHAR" property="tranContent"/>
+        <result column="pay_dsct_amount" jdbcType="VARCHAR" property="payDsctAmount"/>
+        <result column="tran_status" jdbcType="VARCHAR" property="tranStatus"/>
+        <result column="order_status" jdbcType="VARCHAR" property="orderStatus"/>
+    </resultMap>
+
+    <insert id="insertList">
+        INSERT INTO pay_fee_detail
+            (pay_mer_tran_no,
+            student_id,
+            phone_num,
+            pay_acct,
+            trade_amount,
+            mer_ptc_id,
+            trans_time,
+            tran_scene,
+            currency,
+            buyer_pay_amount,
+            total_amount,
+            refunded_amt,
+            tran_content,
+            pay_dsct_amount,
+            tran_status,
+            order_status)
+        VALUES
+        <foreach collection="list" index="index" item="item" separator="," >
+            (#{item.payMerTranNo},
+            #{item.studentId},
+            #{item.phoneNum},
+            #{item.payAcct},
+            #{item.tradeAmount},
+            #{item.merPtcId},
+            #{item.transTime},
+            #{item.tranScene},
+            #{item.currency},
+            #{item.buyerPayAmount},
+            #{item.totalAmount},
+            #{item.refundedAmt},
+            #{item.tranContent},
+            #{item.payDsctAmount},
+            #{item.tranStatus},
+            #{item.orderStatus})
+        </foreach>
+    </insert>
+
+    <!-- 如果有逻辑删除字段过滤，请写到这里 -->
+    <sql id="filterRef">
+        <!-- 这里必须加上全包名，否则当filterRef被其他Mapper.xml包含引用的时候，就会调用Mapper.xml中的该SQL片段 -->
+        <include refid="com.course.app.webadmin.upms.dao.PayFeeDetailMapper.inputFilterRef"/>
+    </sql>
+
+    <!-- 这里仅包含调用接口输入的主表过滤条件 -->
+    <sql id="inputFilterRef">
+        <if test="payFeeDetailFilter != null">
+        </if>
+    </sql>
+
+    <select id="getPayFeeDetailList" resultMap="BaseResultMap" parameterType="com.course.app.webadmin.upms.model.PayFeeDetail">
+        SELECT * FROM pay_fee_detail
+        <where>
+            <include refid="filterRef"/>
+        </where>
+        <if test="orderBy != null and orderBy != ''">
+            ORDER BY ${orderBy}
+        </if>
+    </select>
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.app.webadmin.upms.dao.ProcessDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.course.app.webadmin.upms.model.ProcessDetail">
+        <id column="process_id" property="processId" />
+        <result column="out_busi_id" property="outBusiId" />
+        <result column="process_step" property="processStep" />
+        <result column="approve_id" property="approveId" />
+        <result column="approve_name" property="approveName" />
+        <result column="approve_reach_time" property="approveReachTime" />
+        <result column="approve_finish_time" property="approveFinishTime" />
+        <result column="process_flag" property="processFlag" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        process_id, out_busi_id, process_step, approve_id, approve_name, approve_reach_time, approve_finish_time, process_flag, create_user_id, create_time
+    </sql>
+
+</mapper>

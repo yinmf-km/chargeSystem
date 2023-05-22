@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.app.webadmin.upms.dao.SysStudentMapper">
+	<resultMap id="BaseResultMap" type="com.course.app.webadmin.upms.model.SysStudent">
+		<id column="student_id" jdbcType="BIGINT" property="studentId" />
+		<result column="student_no" jdbcType="VARCHAR" property="studentNo" />
+		<result column="student_name" jdbcType="VARCHAR" property="studentName" />
+		<result column="sex" jdbcType="INTEGER" property="sex" />
+		<result column="identity_card" jdbcType="VARCHAR" property="identityCard" />
+		<result column="home_address" jdbcType="VARCHAR" property="homeAddress" />
+		<result column="domicile_address" jdbcType="VARCHAR" property="domicileAddress" />
+		<result column="grade_school" jdbcType="VARCHAR" property="gradeSchool" />
+		<result column="mse_score" jdbcType="INTEGER" property="mseScore" />
+		<result column="student_status_dist_nm" jdbcType="VARCHAR" property="studentStatusDistNm" />
+		<result column="dorm_id" jdbcType="BIGINT" property="dormId" />
+		<result column="class_id" jdbcType="BIGINT" property="classId" />
+		<result column="poor_flag" jdbcType="TINYINT" property="poorFlag" />
+		<result column="dependant" jdbcType="VARCHAR" property="dependant" />
+		<result column="phone_num" jdbcType="VARCHAR" property="phoneNum" />
+		<result column="pay_type" jdbcType="INTEGER" property="payType" />
+		<result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_user_id" jdbcType="BIGINT" property="updateUserId" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+		<result column="deleted_flag" jdbcType="INTEGER" property="deletedFlag" />
+		<result column="political_outlook" jdbcType="VARCHAR" property="politicalOutlook" />
+		<result column="status_type" jdbcType="INTEGER" property="statusType" />
+		<result column="parent_notes" jdbcType="VARCHAR" property="parentNotes" />
+		<result column="student_status" jdbcType="INTEGER" property="studentStatus" />
+		<result column="enrol_time" jdbcType="TIMESTAMP" property="enrolTime" />
+		<result column="dropout_time" jdbcType="TIMESTAMP" property="dropoutTime" />
+		<result column="ost_time" jdbcType="TIMESTAMP" property="ostTime" />
+		<result column="register_type" jdbcType="INTEGER" property="registerType" />
+		<result column="open_id" jdbcType="VARCHAR" property="openId" />
+	</resultMap>
+
+	<insert id="insertList">
+		INSERT INTO sys_student
+		(student_id,
+		student_no,
+		student_name,
+		sex,
+		identity_card,
+		home_address,
+		domicile_address,
+		grade_school,
+		mse_score,
+		student_status_dist_nm,
+		dorm_id,
+		class_id,
+		poor_flag,
+		dependant,
+		phone_num,
+		pay_type,
+		create_user_id,
+		create_time,
+		update_user_id,
+		update_time,
+		deleted_flag,
+		political_outlook,
+		status_type,
+		parent_notes,
+		student_status,
+		enrol_time,
+		dropout_time,
+		ost_time,
+		register_type,
+		open_id)
+		VALUES
+		<foreach collection="list" index="index" item="item" separator=",">
+			(#{item.studentId},
+			#{item.studentNo},
+			#{item.studentName},
+			#{item.sex},
+			#{item.identityCard},
+			#{item.homeAddress},
+			#{item.domicileAddress},
+			#{item.gradeSchool},
+			#{item.mseScore},
+			#{item.studentStatusDistNm},
+			#{item.dormId},
+			#{item.classId},
+			#{item.poorFlag},
+			#{item.dependant},
+			#{item.phoneNum},
+			#{item.payType},
+			#{item.createUserId},
+			#{item.createTime},
+			#{item.updateUserId},
+			#{item.updateTime},
+			#{item.deletedFlag},
+			#{item.politicalOutlook},
+			#{item.statusType},
+			#{item.parentNotes},
+			#{item.studentStatus},
+			#{item.enrolTime},
+			#{item.dropoutTime},
+			#{item.ostTime},
+			#{item.registerType},
+			#{item.openId})
+		</foreach>
+	</insert>
+
+	<!-- 如果有逻辑删除字段过滤，请写到这里 -->
+	<sql id="filterRef">
+		<!-- 这里必须加上全包名，否则当filterRef被其他Mapper.xml包含引用的时候，就会调用Mapper.xml中的该SQL片段 -->
+		<include refid="com.course.app.webadmin.upms.dao.SysStudentMapper.inputFilterRef" />
+		AND sys_student.deleted_flag = ${@com.course.app.common.core.constant.GlobalDeletedFlag@NORMAL}
+	</sql>
+
+	<!-- 这里仅包含调用接口输入的主表过滤条件 -->
+	<sql id="inputFilterRef">
+		<if test="sysStudentFilter != null">
+			<if test="sysStudentFilter.studentName != null and sysStudentFilter.studentName != ''">
+				AND sys_student.student_name = #{sysStudentFilter.studentName}
+			</if>
+			<if test="sysStudentFilter.identityCard != null and sysStudentFilter.identityCard != ''">
+				AND sys_student.identity_card = #{sysStudentFilter.identityCard}
+			</if>
+			<if test="sysStudentFilter.homeAddress != null and sysStudentFilter.homeAddress != ''">
+				<bind name="safeSysStudentHomeAddress" value="'%' + sysStudentFilter.homeAddress + '%'" />
+				AND sys_student.home_address LIKE #{safeSysStudentHomeAddress}
+			</if>
+			<if test="sysStudentFilter.domicileAddress != null and sysStudentFilter.domicileAddress != ''">
+				<bind name="safeSysStudentDomicileAddress" value="'%' + sysStudentFilter.domicileAddress + '%'" />
+				AND sys_student.domicile_address LIKE #{safeSysStudentDomicileAddress}
+			</if>
+			<if test="sysStudentFilter.gradeSchool != null and sysStudentFilter.gradeSchool != ''">
+				<bind name="safeSysStudentGradeSchool" value="'%' + sysStudentFilter.gradeSchool + '%'" />
+				AND sys_student.grade_school LIKE #{safeSysStudentGradeSchool}
+			</if>
+			<if test="sysStudentFilter.mseScore != null">
+				AND sys_student.mse_score = #{sysStudentFilter.mseScore}
+			</if>
+			<if test="sysStudentFilter.studentStatusDistNm != null and sysStudentFilter.studentStatusDistNm != ''">
+				<bind name="safeSysStudentStudentStatusDistNm" value="'%' + sysStudentFilter.studentStatusDistNm + '%'" />
+				AND sys_student.student_status_dist_nm LIKE #{safeSysStudentStudentStatusDistNm}
+			</if>
+		</if>
+	</sql>
+
+	<select id="getSysStudentList" resultMap="BaseResultMap" parameterType="com.course.app.webadmin.upms.model.SysStudent">
+		SELECT * FROM sys_student
+		<where>
+			<include refid="filterRef" />
+		</where>
+		<if test="orderBy != null and orderBy != ''">
+			ORDER BY ${orderBy}
+		</if>
+	</select>
+
+	<select id="listStudentInfo" parameterType="java.util.Map" resultType="java.util.Map">
+		select t.*,sc.class_name,sd.bed_num,sd.build_num,sd.dorm_num,sd.dorm_type from sys_student t
+		left join sys_class sc on t.class_id = sc.class_id
+		left join sys_dorm sd on t.dorm_id =
+		sd.dorm_id
+		where 1=1
+		<if test="studentName != null and studentName != ''">
+			and t.student_name = #{studentName}
+		</if>
+		<if test="sex != null and sex != ''">
+			and t.sex = #{sex}
+		</if>
+		<if test="identityCard != null and identityCard != ''">
+			and t.identity_card = #{identityCard}
+		</if>
+		<if test="homeAddress != null and homeAddress != ''">
+			and t.home_address like CONCAT('%', #{homeAddress}, '%')
+		</if>
+		<if test="gradeSchool != null and gradeSchool != ''">
+			and t.grade_school like CONCAT('%', #{gradeSchool}, '%')
+		</if>
+		<if test="studentStatusDistNm != null and studentStatusDistNm != ''">
+			and t.student_status_dist_nm = #{studentStatusDistNm}
+		</if>
+		<if test="classId != null and classId != ''">
+			and sc.class_id = #{classId}
+		</if>
+		<if test="dormType != null and dormType != ''">
+			and sd.dorm_type = #{dormType}
+		</if>
+		<if test="mseScoreMin != null and mseScoreMin != ''">
+			and t.mse_score <![CDATA[ >= ]]>
+			#{mseScoreMin}
+		</if>
+		<if test="mseScoreMax != null and mseScoreMax != ''">
+			and t.mse_score <![CDATA[ <= ]]>
+			#{mseScoreMax}
+		</if>
+		<if test="dependant != null and dependant != ''">
+			and t.dorm_type = #{dependant}
+		</if>
+		<if test="phoneNum != null and phoneNum != ''">
+			and t.phone_num = #{phoneNum}
+		</if>
+		<if test="payType != null and payType != ''">
+			and t.pay_type = #{payType}
+		</if>
+		<if test="deletedFlag != null and deletedFlag != ''">
+			and t.deleted_flag = #{deletedFlag}
+		</if>
+	</select>
+</mapper>

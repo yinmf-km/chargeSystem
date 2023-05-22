@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.app.webadmin.upms.dao.PrePaymentFeeDetailMapper">
+    <resultMap id="BaseResultMap" type="com.course.app.webadmin.upms.model.PrePaymentFeeDetail">
+        <id column="pre_pay_mer_tran_no" jdbcType="BIGINT" property="prePayMerTranNo"/>
+        <result column="student_id" jdbcType="BIGINT" property="studentId"/>
+        <result column="phone_num" jdbcType="VARCHAR" property="phoneNum"/>
+        <result column="trade_amount" jdbcType="VARCHAR" property="tradeAmount"/>
+        <result column="trans_time" jdbcType="TIMESTAMP" property="transTime"/>
+        <result column="tran_scene" jdbcType="VARCHAR" property="tranScene"/>
+    </resultMap>
+
+    <insert id="insertList">
+        INSERT INTO pre_payment_fee_detail
+            (pre_pay_mer_tran_no,
+            student_id,
+            phone_num,
+            trade_amount,
+            trans_time,
+            tran_scene)
+        VALUES
+        <foreach collection="list" index="index" item="item" separator="," >
+            (#{item.prePayMerTranNo},
+            #{item.studentId},
+            #{item.phoneNum},
+            #{item.tradeAmount},
+            #{item.transTime},
+            #{item.tranScene})
+        </foreach>
+    </insert>
+
+    <!-- 如果有逻辑删除字段过滤，请写到这里 -->
+    <sql id="filterRef">
+        <!-- 这里必须加上全包名，否则当filterRef被其他Mapper.xml包含引用的时候，就会调用Mapper.xml中的该SQL片段 -->
+        <include refid="com.course.app.webadmin.upms.dao.PrePaymentFeeDetailMapper.inputFilterRef"/>
+    </sql>
+
+    <!-- 这里仅包含调用接口输入的主表过滤条件 -->
+    <sql id="inputFilterRef">
+        <if test="prePaymentFeeDetailFilter != null">
+        </if>
+    </sql>
+
+    <select id="getPrePaymentFeeDetailList" resultMap="BaseResultMap" parameterType="com.course.app.webadmin.upms.model.PrePaymentFeeDetail">
+        SELECT * FROM pre_payment_fee_detail
+        <where>
+            <include refid="filterRef"/>
+        </where>
+        <if test="orderBy != null and orderBy != ''">
+            ORDER BY ${orderBy}
+        </if>
+    </select>
+</mapper>

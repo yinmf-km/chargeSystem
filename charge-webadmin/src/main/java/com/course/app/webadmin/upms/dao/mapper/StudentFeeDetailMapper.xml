@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.app.webadmin.upms.dao.StudentFeeDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.course.app.webadmin.upms.model.StudentFeeDetail">
+        <id column="fee_id" property="feeId" />
+        <result column="student_id" property="studentId" />
+        <result column="fee_amount" property="feeAmount" />
+        <result column="fee_final_time" property="feeFinalTime" />
+        <result column="fee_type" property="feeType" />
+        <result column="fee_attr_year" property="feeAttrYear" />
+        <result column="fee_status" property="feeStatus" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        fee_id, student_id, fee_amount, fee_final_time, fee_type, fee_attr_year, fee_status, create_time
+    </sql>
+
+</mapper>

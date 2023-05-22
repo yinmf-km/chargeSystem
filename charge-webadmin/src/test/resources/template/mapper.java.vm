@@ -1,0 +1,28 @@
+package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${superMapperClassPackage};
+#if(${mapperAnnotation})
+import org.apache.ibatis.annotations.Mapper;
+#end
+
+/**
+ * <p>
+ * $!{table.comment} Mapper 接口
+  * 注意查看BaseMapper预设定功能不要重复coding
+ * </p>
+  * 此代码由代码生成器自动生成，目前生成了（controller、entity、mapper、service、serviceImpl）
+  * 生成器路径：/onlinehandle-gae-serviceimpl/src/test/java/com/cmos/gae/MysqlGenerator.java
+ * @author ${author}
+ * @since ${date}
+ */
+#if(${mapperAnnotation})
+@Mapper
+#end
+#if(${kotlin})
+interface ${table.mapperName} : ${superMapperClass}<${entity}>
+#else
+public interface ${table.mapperName} extends BaseDaoMapper<${entity}> {
+
+}
+#end

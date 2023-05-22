@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.app.webadmin.upms.dao.SysDormMapper">
+    <resultMap id="BaseResultMap" type="com.course.app.webadmin.upms.model.SysDorm">
+        <id column="dorm_id" jdbcType="BIGINT" property="dormId"/>
+        <result column="build_num" jdbcType="VARCHAR" property="buildNum"/>
+        <result column="dorm_num" jdbcType="VARCHAR" property="dormNum"/>
+        <result column="dorm_type" jdbcType="VARCHAR" property="dormType"/>
+        <result column="bed_num" jdbcType="INTEGER" property="bedNum"/>
+        <result column="fee" jdbcType="INTEGER" property="fee"/>
+        <result column="is_full" jdbcType="INTEGER" property="isFull"/>
+        <result column="create_user_id" jdbcType="BIGINT" property="createUserId"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_user_id" jdbcType="BIGINT" property="updateUserId"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="deleted_flag" jdbcType="INTEGER" property="deletedFlag"/>
+    </resultMap>
+
+    <insert id="insertList">
+        INSERT INTO sys_dorm
+            (dorm_id,
+            build_num,
+            dorm_num,
+            dorm_type,
+            bed_num,
+            fee,
+            is_full,
+            create_user_id,
+            create_time,
+            update_user_id,
+            update_time,
+            deleted_flag)
+        VALUES
+        <foreach collection="list" index="index" item="item" separator="," >
+            (#{item.dormId},
+            #{item.buildNum},
+            #{item.dormNum},
+            #{item.dormType},
+            #{item.bedNum},
+            #{item.fee},
+            #{item.isFull},
+            #{item.createUserId},
+            #{item.createTime},
+            #{item.updateUserId},
+            #{item.updateTime},
+            #{item.deletedFlag})
+        </foreach>
+    </insert>
+
+    <!-- 如果有逻辑删除字段过滤，请写到这里 -->
+    <sql id="filterRef">
+        <!-- 这里必须加上全包名，否则当filterRef被其他Mapper.xml包含引用的时候，就会调用Mapper.xml中的该SQL片段 -->
+        <include refid="com.course.app.webadmin.upms.dao.SysDormMapper.inputFilterRef"/>
+        AND sys_dorm.deleted_flag = ${@com.course.app.common.core.constant.GlobalDeletedFlag@NORMAL}
+    </sql>
+
+    <!-- 这里仅包含调用接口输入的主表过滤条件 -->
+    <sql id="inputFilterRef">
+        <if test="sysDormFilter != null">
+        </if>
+    </sql>
+
+    <select id="getSysDormList" resultMap="BaseResultMap" parameterType="com.course.app.webadmin.upms.model.SysDorm">
+        SELECT * FROM sys_dorm
+        <where>
+            <include refid="filterRef"/>
+        </where>
+        <if test="orderBy != null and orderBy != ''">
+            ORDER BY ${orderBy}
+        </if>
+    </select>
+</mapper>

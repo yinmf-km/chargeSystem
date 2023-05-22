@@ -42,10 +42,12 @@
         <druid.version>1.2.6</druid.version>
         <mybatisplus.version>3.5.2</mybatisplus.version>
         <pagehelper.version>1.4.3</pagehelper.version>
+        <mybatis-plus-generator.version>3.5.2</mybatis-plus-generator.version>
+        <velocity-engine-core.version>2.3</velocity-engine-core.version>
     </properties>
 
     <modules>
-        <module>application-webadmin</module>
+        <module>charge-webadmin</module>
         <module>common</module>
     </modules>
 
