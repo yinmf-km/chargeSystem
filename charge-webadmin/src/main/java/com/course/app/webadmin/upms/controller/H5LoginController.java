@@ -26,6 +26,7 @@ import com.course.app.common.core.util.MyCommonUtil;
 import com.course.app.common.core.util.MyModelUtil;
 import com.course.app.common.core.util.RedisKeyUtil;
 import com.course.app.common.sequence.wrapper.IdGeneratorWrapper;
+import com.course.app.webadmin.app.util.SendSmsUtil;
 import com.course.app.webadmin.constant.ComConstant.CacheTime;
 import com.course.app.webadmin.upms.dto.SysStudentDto;
 import com.course.app.webadmin.upms.model.ProcessDetail;
@@ -40,7 +41,6 @@ import com.course.app.webadmin.upms.service.StudentFeeDetailService;
 import com.course.app.webadmin.upms.service.SysClassService;
 import com.course.app.webadmin.upms.service.SysDormService;
 import com.course.app.webadmin.upms.service.SysStudentService;
-import com.varif.app.utils.SendSmsUtil;
 
 import cn.hutool.core.util.PhoneUtil;
 import cn.hutool.core.util.RandomUtil;
